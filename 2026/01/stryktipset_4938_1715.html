@@ -20,9 +20,10 @@
         td:nth-child(1) { text-align: center; width: 40px; }
         td.team { text-align: left; white-space: nowrap; }
         tr:hover { background: #f5f5f5; }
-        .sign-cell .val { font-size: 0.8em; line-height: 1.4; text-align: left; padding-left: 0.3rem; }
+        .sign-cell .val { font-size: 0.8em; line-height: 1.3; text-align: left; padding-left: 0.3rem; }
         .sign-cell .label { color: #666; font-size: 0.85em; display: inline-block; width: 35px; }
         .sign-cell .sys { font-weight: bold; color: #1a237e; }
+        .sign-cell .ev { color: #2e7d32; font-weight: 500; }
         .sign-cell .odds { color: #444; }
         .sign-cell .folk { color: #888; font-style: italic; }
         .spike { background: #e8f5e9; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 4px solid #4caf50; }
@@ -35,7 +36,7 @@
         @media (max-width: 700px) { 
             table { font-size: 0.7rem; }
             th, td { padding: 0.2rem; }
-            .sign-cell { min-width: 70px; }
+            .sign-cell { min-width: 80px; }
             .sign-cell .label { width: 28px; }
         }
     </style>
@@ -74,6 +75,7 @@
         <h2>📊 Match-för-match analys</h2>
         <div class="legend">
             <strong>Sys:</strong> Systemets fördelning | 
+            <strong>EV:</strong> Expected Value (prob × odds) | 
             <strong>Odds:</strong> Svenska Spels odds | 
             <strong>Folk:</strong> Folkets streck
         </div>
@@ -96,16 +98,19 @@
                 <td class="team">Newcastle</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 97%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
                     <div class="val odds"><span class="label">Odds:</span> 1.75</div>
                     <div class="val folk"><span class="label">Folk:</span> 58%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
                     <div class="val odds"><span class="label">Odds:</span> 4.20</div>
                     <div class="val folk"><span class="label">Folk:</span> 25%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 3%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
                     <div class="val odds"><span class="label">Odds:</span> 4.70</div>
                     <div class="val folk"><span class="label">Folk:</span> 17%</div>
                 </td>
@@ -116,16 +121,19 @@
                 <td class="team">West Ham</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.97</div>
                     <div class="val odds"><span class="label">Odds:</span> 1.56</div>
                     <div class="val folk"><span class="label">Folk:</span> 69%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 61%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.97</div>
                     <div class="val odds"><span class="label">Odds:</span> 4.70</div>
                     <div class="val folk"><span class="label">Folk:</span> 19%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 39%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.97</div>
                     <div class="val odds"><span class="label">Odds:</span> 5.75</div>
                     <div class="val folk"><span class="label">Folk:</span> 12%</div>
                 </td>
@@ -136,17 +144,20 @@
                 <td class="team">Arsenal</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 29%</div>
-                    <div class="val odds"><span class="label">Odds:</span> 7.00</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
+                    <div class="val odds"><span class="label">Odds:</span> 6.75</div>
                     <div class="val folk"><span class="label">Folk:</span> 10%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 71%</div>
-                    <div class="val odds"><span class="label">Odds:</span> 4.20</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
+                    <div class="val odds"><span class="label">Odds:</span> 4.10</div>
                     <div class="val folk"><span class="label">Folk:</span> 21%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
-                    <div class="val odds"><span class="label">Odds:</span> 1.55</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
+                    <div class="val odds"><span class="label">Odds:</span> 1.58</div>
                     <div class="val folk"><span class="label">Folk:</span> 69%</div>
                 </td>
             </tr>
@@ -156,16 +167,19 @@
                 <td class="team">Everton</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 92%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
                     <div class="val odds"><span class="label">Odds:</span> 1.94</div>
                     <div class="val folk"><span class="label">Folk:</span> 51%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.65</div>
                     <div class="val folk"><span class="label">Folk:</span> 28%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 8%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.98</div>
                     <div class="val odds"><span class="label">Odds:</span> 4.25</div>
                     <div class="val folk"><span class="label">Folk:</span> 21%</div>
                 </td>
@@ -176,16 +190,19 @@
                 <td class="team">Bournemou</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 25%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.97</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.05</div>
                     <div class="val folk"><span class="label">Folk:</span> 28%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 32%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.97</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.55</div>
                     <div class="val folk"><span class="label">Folk:</span> 24%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 44%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.97</div>
                     <div class="val odds"><span class="label">Odds:</span> 2.40</div>
                     <div class="val folk"><span class="label">Folk:</span> 48%</div>
                 </td>
@@ -196,16 +213,19 @@
                 <td class="team">Hull</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 48%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.95</div>
                     <div class="val odds"><span class="label">Odds:</span> 2.16</div>
                     <div class="val folk"><span class="label">Folk:</span> 37%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 32%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.95</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.50</div>
                     <div class="val folk"><span class="label">Folk:</span> 27%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 21%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.95</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.35</div>
                     <div class="val folk"><span class="label">Folk:</span> 36%</div>
                 </td>
@@ -216,18 +236,21 @@
                 <td class="team">Preston</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 100%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 1.38</div>
                     <div class="val folk"><span class="label">Folk:</span> 80%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 5.00</div>
-                    <div class="val folk"><span class="label">Folk:</span> 13%</div>
+                    <div class="val folk"><span class="label">Folk:</span> 14%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 8.50</div>
-                    <div class="val folk"><span class="label">Folk:</span> 7%</div>
+                    <div class="val folk"><span class="label">Folk:</span> 6%</div>
                 </td>
             </tr>
             <tr>
@@ -236,16 +259,19 @@
                 <td class="team">Norwich</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 1.76</div>
                     <div class="val folk"><span class="label">Folk:</span> 61%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 60%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.85</div>
                     <div class="val folk"><span class="label">Folk:</span> 21%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 40%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 4.70</div>
                     <div class="val folk"><span class="label">Folk:</span> 18%</div>
                 </td>
@@ -256,16 +282,19 @@
                 <td class="team">Sheff U</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 42%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 2.43</div>
-                    <div class="val folk"><span class="label">Folk:</span> 46%</div>
+                    <div class="val folk"><span class="label">Folk:</span> 45%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 33%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.35</div>
-                    <div class="val folk"><span class="label">Folk:</span> 25%</div>
+                    <div class="val folk"><span class="label">Folk:</span> 26%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 25%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.05</div>
                     <div class="val folk"><span class="label">Folk:</span> 29%</div>
                 </td>
@@ -276,16 +305,19 @@
                 <td class="team">Birmingha</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 18%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.75</div>
                     <div class="val folk"><span class="label">Folk:</span> 21%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 26%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.30</div>
                     <div class="val folk"><span class="label">Folk:</span> 27%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 57%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 2.12</div>
                     <div class="val folk"><span class="label">Folk:</span> 52%</div>
                 </td>
@@ -296,16 +328,19 @@
                 <td class="team">West Brom</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 27%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.05</div>
                     <div class="val folk"><span class="label">Folk:</span> 35%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 33%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.10</div>
                     <div class="val folk"><span class="label">Folk:</span> 34%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 40%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 2.55</div>
                     <div class="val folk"><span class="label">Folk:</span> 31%</div>
                 </td>
@@ -316,17 +351,20 @@
                 <td class="team">Coventry</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 17%</div>
-                    <div class="val odds"><span class="label">Odds:</span> 3.70</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
+                    <div class="val odds"><span class="label">Odds:</span> 3.65</div>
                     <div class="val folk"><span class="label">Folk:</span> 18%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 24%</div>
-                    <div class="val odds"><span class="label">Odds:</span> 3.55</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
+                    <div class="val odds"><span class="label">Odds:</span> 3.65</div>
                     <div class="val folk"><span class="label">Folk:</span> 24%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 59%</div>
-                    <div class="val odds"><span class="label">Odds:</span> 2.05</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
+                    <div class="val odds"><span class="label">Odds:</span> 2.04</div>
                     <div class="val folk"><span class="label">Folk:</span> 58%</div>
                 </td>
             </tr>
@@ -336,16 +374,19 @@
                 <td class="team">Swansea</td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 2.14</div>
                     <div class="val folk"><span class="label">Folk:</span> 55%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 0%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.35</div>
                     <div class="val folk"><span class="label">Folk:</span> 27%</div>
                 </td>
                 <td class="sign-cell">
                     <div class="val sys"><span class="label">Sys:</span> 100%</div>
+                    <div class="val ev"><span class="label">EV:</span> 0.96</div>
                     <div class="val odds"><span class="label">Odds:</span> 3.65</div>
                     <div class="val folk"><span class="label">Folk:</span> 18%</div>
                 </td>
