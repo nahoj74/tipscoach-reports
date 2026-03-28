@@ -1,0 +1,239 @@
+{
+  "game": "topptipset",
+  "draw_number": 3972,
+  "strategy": "attack",
+  "rows": 12,
+  "median_ev": 1.12,
+  "odds_min": 950,
+  "odds_max": 950,
+  "spikes": [
+    {
+      "index": 1,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 1.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 2,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.0,
+        "X": 1.0,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 3,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 1.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 4,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 1.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 5,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.0,
+        "X": 1.0,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 6,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 1.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 7,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 1.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    },
+    {
+      "index": 8,
+      "home": "Home",
+      "away": "Away",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.0,
+        "X": 1.0,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "odds": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "folk": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 0.0
+      },
+      "reasoning": null
+    }
+  ],
+  "heavy": [],
+  "open_matches": [],
+  "rules_applied": [],
+  "risk_level": "low",
+  "spf_count": 8,
+  "contrarian_plays": [],
+  "ram_ascii": "M01 1:1.00 X:0.00 2:0.00\nM02 1:0.00 X:1.00 2:0.00\nM03 1:0.00 X:0.00 2:1.00\nM04 1:1.00 X:0.00 2:0.00\nM05 1:0.00 X:1.00 2:0.00\nM06 1:0.00 X:0.00 2:1.00\nM07 1:1.00 X:0.00 2:0.00\nM08 1:0.00 X:1.00 2:0.00",
+  "selective_betting": {
+    "verdict": "UNKNOWN",
+    "recommendation": "UNKNOWN"
+  },
+  "timestamp": "2026-03-28T10:58:55+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "game": "topptipset",
+  "draw_number": 3972,
+  "draw_quality_grade": "B",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "strategy": "attack",
+  "rows": 12,
+  "median_ev": 1.12,
+  "selective_betting_verdict": "UNKNOWN",
+  "matches": [],
+  "timestamp": "2026-03-28T10:58:55+00:00"
+}

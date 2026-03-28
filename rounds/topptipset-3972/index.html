@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tipscoach rounds</title>
+  <title>Omgångssammanfattning topptipset #3972</title>
   <style>
     :root {
       --bg: #f5f7fa;
@@ -142,61 +142,39 @@
     <header class="topbar">
       <p class="brand">Tipscoach</p>
       <p class="meta">
-Publicering · 2026-03-28T10:58:59+00:00      </p>
+topptipset #3972 · 2026-03-28T10:58:55+00:00      </p>
     </header>
 
 <div class="card">
-  <h1>Publicerade omgångar</h1>
-  <p class="meta">Källa: <code>_data/rounds.json</code></p>
+  <h1>Omgångssammanfattning</h1>
   <p>
-    <label for="game-filter"><strong>Filtrera spel:</strong></label>
-    <select id="game-filter" onchange="filterRounds()">
-      <option value="all">Alla</option>
-      <option value="topptipset">Topptipset</option>
-    </select>
+    <span class="badge grade-b">Kvalitet B</span>
+    <span class="badge">Rader 12</span>
+    <span class="badge">Median EV 1.120</span>
+    <span class="badge">Selective UNKNOWN</span>
   </p>
 </div>
 
 <div class="card">
-  <table id="rounds-table">
-    <thead>
-      <tr>
-        <th>Round</th>
-        <th>Grade</th>
-        <th>Strategy</th>
-        <th>Rows</th>
-        <th>Median EV</th>
-        <th>Verdict</th>
-        <th>Länkar</th>
-      </tr>
-    </thead>
+  <h2>Artefakter</h2>
+  <table>
+    <thead><tr><th>Del</th><th>Status</th><th>Länk</th></tr></thead>
     <tbody>
-      <tr data-game="topptipset">
-        <td>Topptipset #3972</td>
-        <td>
-          <span class="badge grade-b">B</span>
-        </td>
-        <td>attack</td>
-        <td>12</td>
-        <td>1.120</td>
-        <td>UNKNOWN</td>
-        <td>
-<a href="rounds/topptipset-3972/index.html">Summary</a> | <a href="rounds/topptipset-3972/analysis.html">Analysis</a> | <a href="rounds/topptipset-3972/report.html">Report</a> | <a href="rounds/topptipset-3972/system.txt">Coupon</a>        </td>
-      </tr>
+      <tr><td>Analys</td><td>klar</td><td><a href="analysis.html">Öppna</a></td></tr>
+      <tr><td>Rapport</td><td>klar</td><td><a href="report.html">Öppna</a></td></tr>
+      <tr><td>Kupong</td><td>klar</td><td><a href="system.txt">Öppna</a></td></tr>
     </tbody>
   </table>
 </div>
 
-<script>
-function filterRounds() {
-  var filter = document.getElementById("game-filter").value;
-  var rows = document.querySelectorAll("#rounds-table tbody tr");
-  rows.forEach(function(row) {
-    var game = row.getAttribute("data-game");
-    row.style.display = (filter === "all" || game === filter) ? "" : "none";
-  });
-}
-</script>
+<div class="card">
+  <h2>Matcher</h2>
+  <table>
+    <thead><tr><th>#</th><th>Match</th><th>Best</th><th>Beslut</th></tr></thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
 
     <footer>
       Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.

@@ -1,0 +1,11 @@
+{
+  "game": "topptipset",
+  "draw_number": 3972,
+  "draw_quality_grade": "B",
+  "draw_quality_score": 0.76,
+  "timestamp": "2026-03-28T10:58:55+00:00",
+  "matches": [],
+  "agent_summary": "Draw quality B (0.76). Predicted X density 0.22.",
+  "predicted_x_density": 0.22,
+  "avg_best_ev": 1.08
+}

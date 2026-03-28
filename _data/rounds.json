@@ -1,0 +1,23 @@
+{
+  "topptipset-3972": {
+    "id": "topptipset-3972",
+    "game": "topptipset",
+    "draw_number": 3972,
+    "grade": "B",
+    "has_analysis": true,
+    "published_at": "2026-03-28T10:58:55+00:00",
+    "strategy": "attack",
+    "rows": 12,
+    "median_ev": 1.12,
+    "verdict": "UNKNOWN",
+    "has_report": true,
+    "has_coupon": true,
+    "urls": {
+      "summary": "rounds/topptipset-3972/index.html",
+      "analysis": "rounds/topptipset-3972/analysis.html",
+      "report": "rounds/topptipset-3972/report.html",
+      "coupon": "rounds/topptipset-3972/system.txt",
+      "coupon_preview": "rounds/topptipset-3972/coupon.html"
+    }
+  }
+}
