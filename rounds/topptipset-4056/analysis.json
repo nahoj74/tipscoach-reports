@@ -3,11 +3,11 @@
   "draw_number": 4056,
   "draw_quality_grade": "A",
   "draw_quality_score": 0.5901,
-  "timestamp": "2026-04-04T20:56:28+00:00",
+  "timestamp": "2026-04-04T21:00:40+00:00",
   "matches": [
     {
       "index": 1,
-      "home": "Inter Mia",
+      "home": "Inter Miami",
       "away": "Austin FC",
       "league": "",
       "best_sign": "X",
@@ -28,8 +28,8 @@
     },
     {
       "index": 2,
-      "home": "Charlotte",
-      "away": "Philadelp",
+      "home": "Charlotte FC",
+      "away": "Philadelphia Union",
       "league": "",
       "best_sign": "2",
       "best_ev": 1.1813451896698515,
@@ -70,8 +70,8 @@
     },
     {
       "index": 4,
-      "home": "Atlanta",
-      "away": "Columbus",
+      "home": "Atlanta United FC",
+      "away": "Columbus Crew",
       "league": "",
       "best_sign": "2",
       "best_ev": 1.2371674457210255,
@@ -91,8 +91,8 @@
     },
     {
       "index": 5,
-      "home": "NY Red Bu",
-      "away": "Cincinnat",
+      "home": "New York Red Bulls",
+      "away": "Cincinnati",
       "league": "",
       "best_sign": "X",
       "best_ev": 1.007449450159631,
@@ -112,7 +112,7 @@
     },
     {
       "index": 6,
-      "home": "Chicago",
+      "home": "Chicago Fire",
       "away": "Nashville",
       "league": "",
       "best_sign": "1",
@@ -133,8 +133,8 @@
     },
     {
       "index": 7,
-      "home": "Houston",
-      "away": "Seattle",
+      "home": "Houston Dynamo",
+      "away": "Seattle Sounders",
       "league": "",
       "best_sign": "1",
       "best_ev": 1.1003213636998743,
@@ -154,8 +154,8 @@
     },
     {
       "index": 8,
-      "home": "San Jose",
-      "away": "San Diego",
+      "home": "San Jose Earthquakes",
+      "away": "San Diego FC",
       "league": "",
       "best_sign": "2",
       "best_ev": 1.2793448589626935,

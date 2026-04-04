@@ -6,70 +6,70 @@
   "coupon_id": null,
   "draw_quality_grade": "A",
   "analysis_url": "analysis.html",
-  "report_url": "report.html",
-  "coupon_url": "system.txt",
-  "coupon_preview_url": "coupon.html",
+  "report_url": null,
+  "coupon_url": null,
+  "coupon_preview_url": null,
   "strategy": "balans",
-  "rows": 75,
-  "median_ev": 1.089944,
-  "selective_betting_verdict": "SKIP",
+  "rows": 0,
+  "median_ev": 0.0,
+  "selective_betting_verdict": "UNKNOWN",
   "matches": [
     {
       "index": 1,
-      "home": "Inter Mia",
+      "home": "Inter Miami",
       "away": "Austin FC",
       "best_sign": "X",
-      "decision": "SPIK X"
+      "decision": "SPIK"
     },
     {
       "index": 2,
-      "home": "Charlotte",
-      "away": "Philadelp",
+      "home": "Charlotte FC",
+      "away": "Philadelphia Union",
       "best_sign": "2",
-      "decision": "SPIK 1"
+      "decision": "SPIK"
     },
     {
       "index": 3,
       "home": "DC United",
       "away": "FC Dallas",
       "best_sign": "1",
-      "decision": "HEL"
+      "decision": "HALV"
     },
     {
       "index": 4,
-      "home": "Atlanta",
-      "away": "Columbus",
+      "home": "Atlanta United FC",
+      "away": "Columbus Crew",
       "best_sign": "2",
-      "decision": "SPIK 2"
+      "decision": "SPIK"
     },
     {
       "index": 5,
-      "home": "NY Red Bu",
-      "away": "Cincinnat",
+      "home": "New York Red Bulls",
+      "away": "Cincinnati",
       "best_sign": "X",
       "decision": "HEL"
     },
     {
       "index": 6,
-      "home": "Chicago",
+      "home": "Chicago Fire",
       "away": "Nashville",
       "best_sign": "1",
-      "decision": "SPIK 1"
+      "decision": "SPIK"
     },
     {
       "index": 7,
-      "home": "Houston",
-      "away": "Seattle",
+      "home": "Houston Dynamo",
+      "away": "Seattle Sounders",
       "best_sign": "1",
-      "decision": "SPIK X"
+      "decision": "SPIK"
     },
     {
       "index": 8,
-      "home": "San Jose",
-      "away": "San Diego",
+      "home": "San Jose Earthquakes",
+      "away": "San Diego FC",
       "best_sign": "2",
-      "decision": "SPIK 2"
+      "decision": "SPIK"
     }
   ],
-  "timestamp": "2026-04-04T20:56:28+00:00"
+  "timestamp": "2026-04-04T21:00:40+00:00"
 }
