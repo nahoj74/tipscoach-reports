@@ -19,5 +19,20 @@
       "coupon": "rounds/topptipset-3972/system.txt",
       "coupon_preview": "rounds/topptipset-3972/coupon.html"
     }
+  },
+  "stryktipset-4947": {
+    "id": "stryktipset-4947",
+    "game": "stryktipset",
+    "draw_number": 4947,
+    "strategy": "balans",
+    "rows": 1470,
+    "median_ev": 1.0764304999999998,
+    "verdict": "SKIP",
+    "has_report": true,
+    "published_at": "2026-04-04T08:40:01+00:00",
+    "urls": {
+      "report": "rounds/stryktipset-4947/report.html",
+      "summary": "rounds/stryktipset-4947/index.html"
+    }
   }
 }
