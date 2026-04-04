@@ -2,15 +2,15 @@
   "game": "topptipset",
   "draw_number": 4056,
   "strategy": "balans",
-  "rows": 75,
-  "median_ev": 1.089944,
+  "rows": 87,
+  "median_ev": 1.087856,
   "odds_min": 1339,
   "odds_max": 10574,
   "spikes": [
     {
       "index": 8,
-      "home": "San Jose",
-      "away": "San Diego",
+      "home": "San Jose Earthquakes",
+      "away": "San Diego FC",
       "decision": "SPIK 2",
       "system_pct": {
         "1": 0.0,
@@ -39,12 +39,12 @@
   "open_matches": [
     {
       "index": 1,
-      "home": "Inter Mia",
+      "home": "Inter Miami",
       "away": "Austin FC",
       "decision": "SPIK X",
       "system_pct": {
-        "1": 0.18666666666666668,
-        "X": 0.8133333333333334,
+        "1": 0.1724137931034483,
+        "X": 0.8275862068965517,
         "2": 0.0
       },
       "ev": {
@@ -66,13 +66,13 @@
     },
     {
       "index": 2,
-      "home": "Charlotte",
-      "away": "Philadelp",
-      "decision": "SPIK 1",
+      "home": "Charlotte FC",
+      "away": "Philadelphia Union",
+      "decision": "SPIK X",
       "system_pct": {
-        "1": 0.41333333333333333,
-        "X": 0.38666666666666666,
-        "2": 0.2
+        "1": 0.40229885057471265,
+        "X": 0.42528735632183906,
+        "2": 0.1724137931034483
       },
       "ev": {
         "1": 0.8784139897563414,
@@ -97,9 +97,9 @@
       "away": "FC Dallas",
       "decision": "HEL",
       "system_pct": {
-        "1": 0.52,
-        "X": 0.30666666666666664,
-        "2": 0.17333333333333334
+        "1": 0.5632183908045977,
+        "X": 0.28735632183908044,
+        "2": 0.14942528735632185
       },
       "ev": {
         "1": 1.026854695170849,
@@ -120,13 +120,13 @@
     },
     {
       "index": 4,
-      "home": "Atlanta",
-      "away": "Columbus",
+      "home": "Atlanta United FC",
+      "away": "Columbus Crew",
       "decision": "SPIK 2",
       "system_pct": {
-        "1": 0.17333333333333334,
+        "1": 0.1724137931034483,
         "X": 0.0,
-        "2": 0.8266666666666667
+        "2": 0.8275862068965517
       },
       "ev": {
         "1": 0.8130706391158096,
@@ -147,13 +147,13 @@
     },
     {
       "index": 5,
-      "home": "NY Red Bu",
-      "away": "Cincinnat",
+      "home": "New York Red Bulls",
+      "away": "Cincinnati",
       "decision": "HEL",
       "system_pct": {
-        "1": 0.4666666666666667,
-        "X": 0.37333333333333335,
-        "2": 0.16
+        "1": 0.4827586206896552,
+        "X": 0.3793103448275862,
+        "2": 0.13793103448275862
       },
       "ev": {
         "1": 0.9969551850538017,
@@ -174,12 +174,12 @@
     },
     {
       "index": 6,
-      "home": "Chicago",
+      "home": "Chicago Fire",
       "away": "Nashville",
       "decision": "SPIK 1",
       "system_pct": {
-        "1": 0.76,
-        "X": 0.24,
+        "1": 0.7701149425287356,
+        "X": 0.22988505747126436,
         "2": 0.0
       },
       "ev": {
@@ -201,13 +201,13 @@
     },
     {
       "index": 7,
-      "home": "Houston",
-      "away": "Seattle",
+      "home": "Houston Dynamo",
+      "away": "Seattle Sounders",
       "decision": "SPIK X",
       "system_pct": {
-        "1": 0.24,
-        "X": 0.41333333333333333,
-        "2": 0.3466666666666667
+        "1": 0.22988505747126436,
+        "X": 0.42528735632183906,
+        "2": 0.3448275862068966
       },
       "ev": {
         "1": 1.1003213636998743,
@@ -233,7 +233,7 @@
   "contrarian_plays": [
     "M8:2"
   ],
-  "ram_ascii": "M01 1:0.19 X:0.81 2:0.00\nM02 1:0.41 X:0.39 2:0.20\nM03 1:0.52 X:0.31 2:0.17\nM04 1:0.17 X:0.00 2:0.83\nM05 1:0.47 X:0.37 2:0.16\nM06 1:0.76 X:0.24 2:0.00\nM07 1:0.24 X:0.41 2:0.35\nM08 1:0.00 X:0.00 2:1.00",
+  "ram_ascii": "M01 1:0.17 X:0.83 2:0.00\nM02 1:0.40 X:0.43 2:0.17\nM03 1:0.56 X:0.29 2:0.15\nM04 1:0.17 X:0.00 2:0.83\nM05 1:0.48 X:0.38 2:0.14\nM06 1:0.77 X:0.23 2:0.00\nM07 1:0.23 X:0.43 2:0.34\nM08 1:0.00 X:0.00 2:1.00",
   "selective_betting": {
     "verdict": "SKIP",
     "recommendation": "SKIP",
@@ -250,7 +250,7 @@
     },
     "strategy": "aggressive"
   },
-  "timestamp": "2026-04-04T20:56:28+00:00",
+  "timestamp": "2026-04-04T21:01:16+00:00",
   "xg_model_rows": null,
   "oracle_prioritization_rows": null,
   "match_context": null,
