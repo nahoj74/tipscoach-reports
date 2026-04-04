@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omgångsanalys topptipset #4058</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #f2f4f7;
+      --text: #122026;
+      --muted: #4a5b63;
+      --line: #d9e1e6;
+      --brand: #176b87;
+      --ok: #1f9d55;
+      --warn: #d97706;
+      --bad: #dc2626;
+      --info: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #ecf3f6 0%, #f5f7fa 55%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--brand);
+      margin: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { text-decoration: none; }
+
+    .btn-primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--brand);
+      border-color: #9ec5d0;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: #23343b;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+
+    .badge.grade-a { color: #0f5132; border-color: #a8d5ba; background: #e8f7ee; }
+    .badge.grade-b { color: #0f4d67; border-color: #9cc8da; background: #e8f2f8; }
+    .badge.grade-c { color: #7a4f01; border-color: #e8c68b; background: #fff5df; }
+    .badge.grade-d { color: #7f1d1d; border-color: #f1a7a7; background: #fdeeee; }
+
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .bad { color: var(--bad); font-weight: 600; }
+    .mono {
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      white-space: pre;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: auto;
+      font-size: 0.86rem;
+    }
+
+    .table-scroll {
+      overflow: auto;
+      max-height: 380px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    a { color: var(--info); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 6px; }
+      .actions .btn { width: 100%; }
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <p class="brand">Tipscoach</p>
+      <p class="meta">
+topptipset #4058 · 2026-04-04T22:31:34+00:00      </p>
+    </header>
+
+<div class="card">
+  <h1>Omgångsanalys</h1>
+  <p>
+    <span class="badge grade-a">Kvalitet A</span>
+    <span class="meta">Score 0.65 · Pred X 0.28 · Avg EV 2.20</span>
+  </p>
+</div>
+
+<div class="card">
+  <h2>Matcher</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Match</th>
+        <th>EV 1/X/2</th>
+        <th>Odds 1/X/2</th>
+        <th>Folk 1/X/2</th>
+        <th>Verdict</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Corinthia - Internaci</td>
+        <td>
+          <span class="">1: 0.73</span><br>
+          <span class="">X: 1.13</span><br>
+          <span class="ok">2: 2.13</span>
+        </td>
+        <td>1: 2.10<br>X: 3.45<br>2: 3.80</td>
+        <td>1: 0.63<br>X: 0.25<br>2: 0.12</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bahia - Palmeiras</td>
+        <td>
+          <span class="ok">1: 1.44</span><br>
+          <span class="">X: 0.85</span><br>
+          <span class="">2: 0.87</span>
+        </td>
+        <td>1: 2.80<br>X: 3.35<br>2: 2.65</td>
+        <td>1: 0.24<br>X: 0.34<br>2: 0.42</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Strong spike candidate on 1 (EV: 1.44)
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Mirassol - Bragatino</td>
+        <td>
+          <span class="">1: 0.96</span><br>
+          <span class="">X: 0.90</span><br>
+          <span class="ok">2: 1.21</span>
+        </td>
+        <td>1: 2.25<br>X: 3.40<br>2: 3.50</td>
+        <td>1: 0.45<br>X: 0.32<br>2: 0.23</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Gremio - Remo</td>
+        <td>
+          <span class="">1: 0.94</span><br>
+          <span class="">X: 0.84</span><br>
+          <span class="ok">2: 2.31</span>
+        </td>
+        <td>1: 1.49<br>X: 4.60<br>2: 7.00</td>
+        <td>1: 0.69<br>X: 0.25<br>2: 0.06</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Athletic - America</td>
+        <td>
+          <span class="">1: 0.88</span><br>
+          <span class="">X: 0.83</span><br>
+          <span class="ok">2: 1.68</span>
+        </td>
+        <td>1: 2.23<br>X: 3.25<br>2: 3.30</td>
+        <td>1: 0.48<br>X: 0.35<br>2: 0.17</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Botafogo - Sao Berna</td>
+        <td>
+          <span class="">1: 0.70</span><br>
+          <span class="">X: 0.97</span><br>
+          <span class="ok">2: 3.08</span>
+        </td>
+        <td>1: 2.28<br>X: 3.05<br>2: 3.40</td>
+        <td>1: 0.59<br>X: 0.32<br>2: 0.09</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>C Cordoba - Newell´s</td>
+        <td>
+          <span class="">1: 0.58</span><br>
+          <span class="">X: 1.33</span><br>
+          <span class="ok">2: 4.01</span>
+        </td>
+        <td>1: 2.38<br>X: 3.00<br>2: 3.40</td>
+        <td>1: 0.69<br>X: 0.24<br>2: 0.07</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Chivas - Pumas</td>
+        <td>
+          <span class="">1: 0.98</span><br>
+          <span class="">X: 0.81</span><br>
+          <span class="ok">2: 1.73</span>
+        </td>
+        <td>1: 1.52<br>X: 4.35<br>2: 6.10</td>
+        <td>1: 0.64<br>X: 0.27<br>2: 0.09</td>
+        <td>SPIK<br><span class="meta">1</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5">
+            <strong>Kommentar:</strong> Half-system suitable, favor 2
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Sammanfattning</h2>
+  <div><p>Draw quality A (0.65). Predicted X density 0.28.</p></div>
+</div>
+
+    <footer>
+      Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.
+    </footer>
+  </div>
+</body>
+</html>

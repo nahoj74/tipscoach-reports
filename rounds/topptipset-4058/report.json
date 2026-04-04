@@ -1,0 +1,259 @@
+{
+  "game": "topptipset",
+  "draw_number": 4058,
+  "strategy": "balans",
+  "rows": 75,
+  "median_ev": 1.0,
+  "odds_min": 1,
+  "odds_max": 7276,
+  "spikes": [],
+  "heavy": [],
+  "open_matches": [
+    {
+      "index": 1,
+      "home": "Corinthia",
+      "away": "Internaci",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.21333333333333335,
+        "X": 0.36,
+        "2": 0.4266666666666667
+      },
+      "ev": {
+        "1": 0.7344105808901997,
+        "X": 1.1265219692959239,
+        "2": 2.1307570142932772
+      },
+      "odds": {
+        "1": 2.1,
+        "X": 3.45,
+        "2": 3.8
+      },
+      "folk": {
+        "1": 0.63,
+        "X": 0.25,
+        "2": 0.12
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 2,
+      "home": "Bahia",
+      "away": "Palmeiras",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.18666666666666668,
+        "X": 0.6533333333333333,
+        "2": 0.16
+      },
+      "ev": {
+        "1": 1.4405445753415769,
+        "X": 0.8499086520013516,
+        "2": 0.8697627624703861
+      },
+      "odds": {
+        "1": 2.8,
+        "X": 3.35,
+        "2": 2.65
+      },
+      "folk": {
+        "1": 0.24,
+        "X": 0.34,
+        "2": 0.42
+      },
+      "reasoning": "Strong spike candidate on 1 (EV: 1.44)"
+    },
+    {
+      "index": 3,
+      "home": "Mirassol",
+      "away": "Bragatino",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.18666666666666668,
+        "X": 0.6933333333333334,
+        "2": 0.12
+      },
+      "ev": {
+        "1": 0.964245923224957,
+        "X": 0.8973336371923428,
+        "2": 1.2127937854226944
+      },
+      "odds": {
+        "1": 2.25,
+        "X": 3.4,
+        "2": 3.5
+      },
+      "folk": {
+        "1": 0.45,
+        "X": 0.32,
+        "2": 0.23
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 4,
+      "home": "Gremio",
+      "away": "Remo",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.72,
+        "X": 0.10666666666666667,
+        "2": 0.17333333333333334
+      },
+      "ev": {
+        "1": 0.9430657721014202,
+        "X": 0.8431008002586696,
+        "2": 2.3084902864225474
+      },
+      "odds": {
+        "1": 1.49,
+        "X": 4.6,
+        "2": 7.0
+      },
+      "folk": {
+        "1": 0.69,
+        "X": 0.25,
+        "2": 0.06
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 5,
+      "home": "Athletic",
+      "away": "America",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.17333333333333334,
+        "X": 0.6133333333333333,
+        "2": 0.21333333333333335
+      },
+      "ev": {
+        "1": 0.8820539644316366,
+        "X": 0.8300224734308781,
+        "2": 1.682977831600042
+      },
+      "odds": {
+        "1": 2.23,
+        "X": 3.25,
+        "2": 3.3
+      },
+      "folk": {
+        "1": 0.48,
+        "X": 0.35,
+        "2": 0.17
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 6,
+      "home": "Botafogo",
+      "away": "Sao Berna",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.13333333333333333,
+        "X": 0.2,
+        "2": 0.6666666666666666
+      },
+      "ev": {
+        "1": 0.7009200505040946,
+        "X": 0.966063167969373,
+        "2": 3.0812995161376078
+      },
+      "odds": {
+        "1": 2.28,
+        "X": 3.05,
+        "2": 3.4
+      },
+      "folk": {
+        "1": 0.59,
+        "X": 0.32,
+        "2": 0.09
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 7,
+      "home": "C Cordoba",
+      "away": "Newell´s",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.29333333333333333,
+        "X": 0.25333333333333335,
+        "2": 0.4533333333333333
+      },
+      "ev": {
+        "1": 0.581260172053011,
+        "X": 1.3257575757575755,
+        "2": 4.010695187165775
+      },
+      "odds": {
+        "1": 2.38,
+        "X": 3.0,
+        "2": 3.4
+      },
+      "folk": {
+        "1": 0.69,
+        "X": 0.24,
+        "2": 0.07
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 8,
+      "home": "Chivas",
+      "away": "Pumas",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.68,
+        "X": 0.14666666666666667,
+        "2": 0.17333333333333334
+      },
+      "ev": {
+        "1": 0.9774143072679694,
+        "X": 0.8095603559900219,
+        "2": 1.7319283025688175
+      },
+      "odds": {
+        "1": 1.52,
+        "X": 4.35,
+        "2": 6.1
+      },
+      "folk": {
+        "1": 0.64,
+        "X": 0.27,
+        "2": 0.09
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    }
+  ],
+  "rules_applied": [],
+  "risk_level": "high",
+  "spf_count": 0,
+  "contrarian_plays": [],
+  "ram_ascii": "M01 1:0.21 X:0.36 2:0.43\nM02 1:0.19 X:0.65 2:0.16\nM03 1:0.19 X:0.69 2:0.12\nM04 1:0.72 X:0.11 2:0.17\nM05 1:0.17 X:0.61 2:0.21\nM06 1:0.13 X:0.20 2:0.67\nM07 1:0.29 X:0.25 2:0.45\nM08 1:0.68 X:0.15 2:0.17",
+  "selective_betting": {
+    "verdict": "PLAY",
+    "recommendation": "PLAY",
+    "reason": "EV=1.120 (>1.05), SPF=0 (≤3)",
+    "metrics": {
+      "avg_ev": 1.12,
+      "n_spf": 0,
+      "n_heavy_fav": 2,
+      "n_open_match": 6,
+      "ev_divergence": 0.1323,
+      "elo_edge": 0.0,
+      "elo_enabled": false,
+      "scenario": "aggressive"
+    },
+    "strategy": "aggressive"
+  },
+  "timestamp": "2026-04-04T22:31:34+00:00",
+  "xg_model_rows": null,
+  "oracle_prioritization_rows": null,
+  "match_context": null,
+  "verdicts_extended": null,
+  "scenario_plan": null,
+  "coach_assessment": null,
+  "combinatorics": null,
+  "provenance": null
+}

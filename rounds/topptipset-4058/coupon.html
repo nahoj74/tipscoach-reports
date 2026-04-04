@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kupong topptipset #4058</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #f2f4f7;
+      --text: #122026;
+      --muted: #4a5b63;
+      --line: #d9e1e6;
+      --brand: #176b87;
+      --ok: #1f9d55;
+      --warn: #d97706;
+      --bad: #dc2626;
+      --info: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #ecf3f6 0%, #f5f7fa 55%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--brand);
+      margin: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { text-decoration: none; }
+
+    .btn-primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--brand);
+      border-color: #9ec5d0;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: #23343b;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+
+    .badge.grade-a { color: #0f5132; border-color: #a8d5ba; background: #e8f7ee; }
+    .badge.grade-b { color: #0f4d67; border-color: #9cc8da; background: #e8f2f8; }
+    .badge.grade-c { color: #7a4f01; border-color: #e8c68b; background: #fff5df; }
+    .badge.grade-d { color: #7f1d1d; border-color: #f1a7a7; background: #fdeeee; }
+
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .bad { color: var(--bad); font-weight: 600; }
+    .mono {
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      white-space: pre;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: auto;
+      font-size: 0.86rem;
+    }
+
+    .table-scroll {
+      overflow: auto;
+      max-height: 380px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    a { color: var(--info); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 6px; }
+      .actions .btn { width: 100%; }
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <p class="brand">Tipscoach</p>
+      <p class="meta">
+topptipset #4058      </p>
+    </header>
+
+<div class="card">
+  <h1>Kupong</h1>
+  <p class="meta">Strategi balans · Rader 75 · Median EV 1.000</p>
+  <div class="actions">
+    <button id="copy-system-btn" class="btn btn-primary" type="button">📋 Kopiera systemtext</button>
+    <a class="btn btn-secondary" href="system.txt" download>⬇️ Öppna/Ladda ned system.txt</a>
+    <button
+      id="confirm-submission-btn"
+      class="btn"
+      type="button"
+      disabled
+      title="Neutral integrationspunkt för framtida säker bekräftelse"
+      data-round-id="topptipset-4058"
+      data-version-id=""
+      data-coupon-id=""
+    >✅ Bekräfta inlämning (kommer snart)</button>
+  </div>
+  <p id="copy-feedback" class="meta" aria-live="polite"></p>
+
+  <p class="meta">
+    Round ID: <code>topptipset-4058</code>
+  </p>
+
+</div>
+
+<div class="card">
+  <h2>Rader</h2>
+  <div class="table-scroll desktop-only">
+    <table>
+      <thead><tr><th>Rad</th><th>Tecken</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>2 1 2 1 X 2 2 2</td></tr>
+        <tr><td>2</td><td>2 1 2 1 X 2 2 X</td></tr>
+        <tr><td>3</td><td>2 1 X 1 X 2 2 1</td></tr>
+        <tr><td>4</td><td>2 X 2 1 2 2 X 2</td></tr>
+        <tr><td>5</td><td>X X X 2 X 2 2 1</td></tr>
+        <tr><td>6</td><td>2 X X 1 X 2 2 1</td></tr>
+        <tr><td>7</td><td>X X X 1 X 2 2 2</td></tr>
+        <tr><td>8</td><td>2 X 1 2 1 X 2 1</td></tr>
+        <tr><td>9</td><td>2 X 1 2 1 X 2 X</td></tr>
+        <tr><td>10</td><td>2 X 1 1 2 2 X 1</td></tr>
+        <tr><td>11</td><td>X X X 1 1 2 2 1</td></tr>
+        <tr><td>12</td><td>X X X 1 X 2 2 1</td></tr>
+        <tr><td>13</td><td>2 X X 1 2 2 1 2</td></tr>
+        <tr><td>14</td><td>X X X X X 2 2 1</td></tr>
+        <tr><td>15</td><td>2 X 2 1 X 2 X 1</td></tr>
+        <tr><td>16</td><td>2 X 1 2 X 2 1 1</td></tr>
+        <tr><td>17</td><td>2 X X 1 1 2 X 1</td></tr>
+        <tr><td>18</td><td>1 X X 1 X 2 2 1</td></tr>
+        <tr><td>19</td><td>X X X 2 X 2 1 2</td></tr>
+        <tr><td>20</td><td>X 1 X 2 X 2 1 1</td></tr>
+        <tr><td>21</td><td>2 X X 1 X X 2 1</td></tr>
+        <tr><td>22</td><td>1 X X X X 2 2 1</td></tr>
+        <tr><td>23</td><td>X 1 X 1 1 X 2 1</td></tr>
+        <tr><td>24</td><td>X 1 X 1 X 2 X 1</td></tr>
+        <tr><td>25</td><td>2 X X 1 2 2 1 1</td></tr>
+        <tr><td>26</td><td>2 X X X 2 2 1 1</td></tr>
+        <tr><td>27</td><td>2 X X 1 X X 2 X</td></tr>
+        <tr><td>28</td><td>1 X 1 1 2 2 X 1</td></tr>
+        <tr><td>29</td><td>X 1 X 1 X 2 X X</td></tr>
+        <tr><td>30</td><td>2 X X 1 2 2 1 X</td></tr>
+        <tr><td>31</td><td>2 2 X X X 2 1 2</td></tr>
+        <tr><td>32</td><td>2 X X 2 2 X 1 1</td></tr>
+        <tr><td>33</td><td>2 X X 1 2 X X 1</td></tr>
+        <tr><td>34</td><td>X X 1 1 1 2 X 1</td></tr>
+        <tr><td>35</td><td>X X 1 1 X X 2 1</td></tr>
+        <tr><td>36</td><td>X 1 2 1 X 2 1 1</td></tr>
+        <tr><td>37</td><td>X X X 1 X 2 X 1</td></tr>
+        <tr><td>38</td><td>X X X 1 X X 2 1</td></tr>
+        <tr><td>39</td><td>2 X 1 1 1 2 1 1</td></tr>
+        <tr><td>40</td><td>X X 1 1 1 2 X X</td></tr>
+        <tr><td>41</td><td>2 1 X X X X X 1</td></tr>
+        <tr><td>42</td><td>2 X X 1 X 2 1 1</td></tr>
+        <tr><td>43</td><td>X 2 X 1 X 2 1 2</td></tr>
+        <tr><td>44</td><td>X X X 1 X 2 1 2</td></tr>
+        <tr><td>45</td><td>X 1 X 1 X 2 1 1</td></tr>
+        <tr><td>46</td><td>1 1 2 1 X 2 2 2</td></tr>
+        <tr><td>47</td><td>1 1 2 1 X 2 2 X</td></tr>
+        <tr><td>48</td><td>1 1 X 1 X 2 2 1</td></tr>
+        <tr><td>49</td><td>1 X 2 1 2 2 X 2</td></tr>
+        <tr><td>50</td><td>1 X X 2 X 2 2 1</td></tr>
+        <tr><td>51</td><td>1 X X 1 X 2 2 1</td></tr>
+        <tr><td>52</td><td>1 X X 1 X 2 2 2</td></tr>
+        <tr><td>53</td><td>1 X 1 2 1 X 2 1</td></tr>
+        <tr><td>54</td><td>1 X 1 2 1 X 2 X</td></tr>
+        <tr><td>55</td><td>1 X 1 1 2 2 X 1</td></tr>
+        <tr><td>56</td><td>X X X 1 1 1 2 1</td></tr>
+        <tr><td>57</td><td>X X X 1 X 1 2 1</td></tr>
+        <tr><td>58</td><td>2 X X 1 2 1 1 2</td></tr>
+        <tr><td>59</td><td>X X X X X 1 2 1</td></tr>
+        <tr><td>60</td><td>2 X 2 1 X 1 X 1</td></tr>
+        <tr><td>61</td><td>2 X 1 2 X 1 1 1</td></tr>
+        <tr><td>62</td><td>2 X X 1 1 1 X 1</td></tr>
+        <tr><td>63</td><td>1 X X 1 X 1 2 1</td></tr>
+        <tr><td>64</td><td>X X X 2 X 1 1 2</td></tr>
+        <tr><td>65</td><td>X 1 X 2 X 1 1 1</td></tr>
+        <tr><td>66</td><td>2 2 X 1 X X 2 1</td></tr>
+        <tr><td>67</td><td>1 2 X X X 2 2 1</td></tr>
+        <tr><td>68</td><td>X 2 X 1 1 X 2 1</td></tr>
+        <tr><td>69</td><td>X 2 X 1 X 2 X 1</td></tr>
+        <tr><td>70</td><td>2 2 X 1 2 2 1 1</td></tr>
+        <tr><td>71</td><td>2 2 X X 2 2 1 1</td></tr>
+        <tr><td>72</td><td>2 2 X 1 X X 2 X</td></tr>
+        <tr><td>73</td><td>1 2 1 1 2 2 X 1</td></tr>
+        <tr><td>74</td><td>X 2 X 1 X 2 X X</td></tr>
+        <tr><td>75</td><td>2 2 X 1 2 2 1 X</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mobile-only">
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 1</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 1 2 1 X 2 2 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 2</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 1 2 1 X 2 2 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 3</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 1 X 1 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 4</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 2 1 2 2 X 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 5</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 2 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 6</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 7</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 X 2 2 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 8</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 1 2 1 X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 9</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 1 2 1 X 2 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 10</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 1 1 2 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 11</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 1 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 12</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 13</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 2 2 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 14</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X X X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 15</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 2 1 X 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 16</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 1 2 X 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 17</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 1 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 18</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X X 1 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 19</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 2 X 2 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 20</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 X 2 X 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 21</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 X X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 22</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X X X X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 23</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 X 1 1 X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 24</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 X 1 X 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 25</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 2 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 26</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X X 2 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 27</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 X X 2 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 28</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X 1 1 2 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 29</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 X 1 X 2 X X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 30</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 2 2 1 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 31</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 2 X X X 2 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 32</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 2 2 X 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 33</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 2 X X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 34</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X 1 1 1 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 35</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X 1 1 X X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 36</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 2 1 X 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 37</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 X 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 38</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 X X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 39</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 1 1 1 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 40</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X 1 1 1 2 X X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 41</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 1 X X X X X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 42</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 X 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 43</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 2 X 1 X 2 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 44</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 X 2 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 45</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 X 1 X 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 46</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 1 2 1 X 2 2 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 47</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 1 2 1 X 2 2 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 48</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 1 X 1 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 49</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X 2 1 2 2 X 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 50</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X X 2 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 51</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X X 1 X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 52</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X X 1 X 2 2 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 53</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X 1 2 1 X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 54</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X 1 2 1 X 2 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 55</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X 1 1 2 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 56</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 1 1 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 57</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 1 X 1 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 58</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 2 1 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 59</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X X X 1 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 60</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 2 1 X 1 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 61</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X 1 2 X 1 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 62</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 X X 1 1 1 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 63</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 X X 1 X 1 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 64</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X X X 2 X 1 1 2</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 65</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 1 X 2 X 1 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 66</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 2 X 1 X X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 67</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 2 X X X 2 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 68</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 2 X 1 1 X 2 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 69</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 2 X 1 X 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 70</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 2 X 1 2 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 71</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 2 X X 2 2 1 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 72</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 2 X 1 X X 2 X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 73</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">1 2 1 1 2 2 X 1</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 74</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">X 2 X 1 X 2 X X</div>
+    </div>
+    <div style="padding:8px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px;">
+      <div class="meta">Rad 75</div>
+      <div class="mono" style="margin-top:6px; white-space:pre-wrap;">2 2 X 1 2 2 1 X</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Teckenfördelning</h2>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 1</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 21.3%" style="width: 21.333333333333336%; background:#1f9d55;"></div>
+        <div title="X 36.0%" style="width: 36.0%; background:#d97706;"></div>
+        <div title="2 42.7%" style="width: 42.66666666666667%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.21 · X 0.36 · 2 0.43</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 2</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 18.7%" style="width: 18.666666666666668%; background:#1f9d55;"></div>
+        <div title="X 65.3%" style="width: 65.33333333333333%; background:#d97706;"></div>
+        <div title="2 16.0%" style="width: 16.0%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.19 · X 0.65 · 2 0.16</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 3</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 18.7%" style="width: 18.666666666666668%; background:#1f9d55;"></div>
+        <div title="X 69.3%" style="width: 69.33333333333334%; background:#d97706;"></div>
+        <div title="2 12.0%" style="width: 12.0%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.19 · X 0.69 · 2 0.12</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 4</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 72.0%" style="width: 72.0%; background:#1f9d55;"></div>
+        <div title="X 10.7%" style="width: 10.666666666666668%; background:#d97706;"></div>
+        <div title="2 17.3%" style="width: 17.333333333333336%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.72 · X 0.11 · 2 0.17</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 5</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 17.3%" style="width: 17.333333333333336%; background:#1f9d55;"></div>
+        <div title="X 61.3%" style="width: 61.33333333333333%; background:#d97706;"></div>
+        <div title="2 21.3%" style="width: 21.333333333333336%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.17 · X 0.61 · 2 0.21</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 6</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 13.3%" style="width: 13.333333333333334%; background:#1f9d55;"></div>
+        <div title="X 20.0%" style="width: 20.0%; background:#d97706;"></div>
+        <div title="2 66.7%" style="width: 66.66666666666666%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.13 · X 0.20 · 2 0.67</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 7</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 29.3%" style="width: 29.333333333333332%; background:#1f9d55;"></div>
+        <div title="X 25.3%" style="width: 25.333333333333336%; background:#d97706;"></div>
+        <div title="2 45.3%" style="width: 45.33333333333333%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.29 · X 0.25 · 2 0.45</div>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <div class="meta">Match 8</div>
+      <div style="display:flex; width:100%; border:1px solid var(--line); border-radius:8px; overflow:hidden; height:18px;">
+        <div title="1 68.0%" style="width: 68.0%; background:#1f9d55;"></div>
+        <div title="X 14.7%" style="width: 14.666666666666666%; background:#d97706;"></div>
+        <div title="2 17.3%" style="width: 17.333333333333336%; background:#2563eb;"></div>
+      </div>
+      <div class="meta">1 0.68 · X 0.15 · 2 0.17</div>
+    </div>
+</div>
+
+<div class="card">
+  <h2>Systemtext</h2>
+  <textarea id="system-text" class="mono" readonly style="width:100%; min-height:180px; border:1px solid var(--line);">Topptipset,Omg=4058,Insats=1
+E,2,1,2,1,X,2,2,2
+E,2,1,2,1,X,2,2,X
+E,2,1,X,1,X,2,2,1
+E,2,X,2,1,2,2,X,2
+E,X,X,X,2,X,2,2,1
+E,2,X,X,1,X,2,2,1
+E,X,X,X,1,X,2,2,2
+E,2,X,1,2,1,X,2,1
+E,2,X,1,2,1,X,2,X
+E,2,X,1,1,2,2,X,1
+E,X,X,X,1,1,2,2,1
+E,X,X,X,1,X,2,2,1
+E,2,X,X,1,2,2,1,2
+E,X,X,X,X,X,2,2,1
+E,2,X,2,1,X,2,X,1
+E,2,X,1,2,X,2,1,1
+E,2,X,X,1,1,2,X,1
+E,1,X,X,1,X,2,2,1
+E,X,X,X,2,X,2,1,2
+E,X,1,X,2,X,2,1,1
+E,2,X,X,1,X,X,2,1
+E,1,X,X,X,X,2,2,1
+E,X,1,X,1,1,X,2,1
+E,X,1,X,1,X,2,X,1
+E,2,X,X,1,2,2,1,1
+E,2,X,X,X,2,2,1,1
+E,2,X,X,1,X,X,2,X
+E,1,X,1,1,2,2,X,1
+E,X,1,X,1,X,2,X,X
+E,2,X,X,1,2,2,1,X
+E,2,2,X,X,X,2,1,2
+E,2,X,X,2,2,X,1,1
+E,2,X,X,1,2,X,X,1
+E,X,X,1,1,1,2,X,1
+E,X,X,1,1,X,X,2,1
+E,X,1,2,1,X,2,1,1
+E,X,X,X,1,X,2,X,1
+E,X,X,X,1,X,X,2,1
+E,2,X,1,1,1,2,1,1
+E,X,X,1,1,1,2,X,X
+E,2,1,X,X,X,X,X,1
+E,2,X,X,1,X,2,1,1
+E,X,2,X,1,X,2,1,2
+E,X,X,X,1,X,2,1,2
+E,X,1,X,1,X,2,1,1
+E,1,1,2,1,X,2,2,2
+E,1,1,2,1,X,2,2,X
+E,1,1,X,1,X,2,2,1
+E,1,X,2,1,2,2,X,2
+E,1,X,X,2,X,2,2,1
+E,1,X,X,1,X,2,2,1
+E,1,X,X,1,X,2,2,2
+E,1,X,1,2,1,X,2,1
+E,1,X,1,2,1,X,2,X
+E,1,X,1,1,2,2,X,1
+E,X,X,X,1,1,1,2,1
+E,X,X,X,1,X,1,2,1
+E,2,X,X,1,2,1,1,2
+E,X,X,X,X,X,1,2,1
+E,2,X,2,1,X,1,X,1
+E,2,X,1,2,X,1,1,1
+E,2,X,X,1,1,1,X,1
+E,1,X,X,1,X,1,2,1
+E,X,X,X,2,X,1,1,2
+E,X,1,X,2,X,1,1,1
+E,2,2,X,1,X,X,2,1
+E,1,2,X,X,X,2,2,1
+E,X,2,X,1,1,X,2,1
+E,X,2,X,1,X,2,X,1
+E,2,2,X,1,2,2,1,1
+E,2,2,X,X,2,2,1,1
+E,2,2,X,1,X,X,2,X
+E,1,2,1,1,2,2,X,1
+E,X,2,X,1,X,2,X,X
+E,2,2,X,1,2,2,1,X</textarea>
+</div>
+
+<script>
+(function () {
+  var copyButton = document.getElementById("copy-system-btn");
+  var systemText = document.getElementById("system-text");
+  var feedback = document.getElementById("copy-feedback");
+
+  if (!copyButton || !systemText || !feedback) {
+    return;
+  }
+
+  function setFeedback(message) {
+    feedback.textContent = message;
+  }
+
+  function fallbackCopy(value) {
+    var helper = document.createElement("textarea");
+    helper.value = value;
+    helper.setAttribute("readonly", "");
+    helper.style.position = "absolute";
+    helper.style.left = "-9999px";
+    document.body.appendChild(helper);
+    helper.select();
+    try {
+      return document.execCommand("copy");
+    } catch (err) {
+      return false;
+    } finally {
+      document.body.removeChild(helper);
+    }
+  }
+
+  copyButton.addEventListener("click", function () {
+    var value = systemText.value || "";
+    if (!value) {
+      setFeedback("Ingen systemtext att kopiera.");
+      return;
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(value).then(function () {
+        setFeedback("Systemtext kopierad ✅");
+      }).catch(function () {
+        if (fallbackCopy(value)) {
+          setFeedback("Systemtext kopierad ✅");
+        } else {
+          setFeedback("Kunde inte kopiera automatiskt. Markera texten manuellt.");
+        }
+      });
+      return;
+    }
+
+    if (fallbackCopy(value)) {
+      setFeedback("Systemtext kopierad ✅");
+    } else {
+      setFeedback("Kunde inte kopiera automatiskt. Markera texten manuellt.");
+    }
+  });
+})();
+</script>
+
+    <footer>
+      Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.
+    </footer>
+  </div>
+</body>
+</html>

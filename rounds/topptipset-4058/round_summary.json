@@ -1,0 +1,75 @@
+{
+  "game": "topptipset",
+  "draw_number": 4058,
+  "round_id": "topptipset-4058",
+  "version_id": null,
+  "coupon_id": null,
+  "draw_quality_grade": "A",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "coupon_preview_url": "coupon.html",
+  "strategy": "balans",
+  "rows": 75,
+  "median_ev": 1.0,
+  "selective_betting_verdict": "PLAY",
+  "matches": [
+    {
+      "index": 1,
+      "home": "Corinthia",
+      "away": "Internaci",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 2,
+      "home": "Bahia",
+      "away": "Palmeiras",
+      "best_sign": "1",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 3,
+      "home": "Mirassol",
+      "away": "Bragatino",
+      "best_sign": "2",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 4,
+      "home": "Gremio",
+      "away": "Remo",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 5,
+      "home": "Athletic",
+      "away": "America",
+      "best_sign": "2",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 6,
+      "home": "Botafogo",
+      "away": "Sao Berna",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 7,
+      "home": "C Cordoba",
+      "away": "Newell´s",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 8,
+      "home": "Chivas",
+      "away": "Pumas",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    }
+  ],
+  "timestamp": "2026-04-04T22:31:34+00:00"
+}
