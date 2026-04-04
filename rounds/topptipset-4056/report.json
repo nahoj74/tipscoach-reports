@@ -1,0 +1,262 @@
+{
+  "game": "topptipset",
+  "draw_number": 4056,
+  "strategy": "balans",
+  "rows": 75,
+  "median_ev": 1.089944,
+  "odds_min": 1339,
+  "odds_max": 10574,
+  "spikes": [
+    {
+      "index": 8,
+      "home": "San Jose",
+      "away": "San Diego",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 1.0
+      },
+      "ev": {
+        "1": 0.9148633144756104,
+        "X": 0.8942298641398136,
+        "2": 1.2793448589626935
+      },
+      "odds": {
+        "1": 2.28,
+        "X": 3.7,
+        "2": 3.0
+      },
+      "folk": {
+        "1": 0.46,
+        "X": 0.29,
+        "2": 0.25
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    }
+  ],
+  "heavy": [],
+  "open_matches": [
+    {
+      "index": 1,
+      "home": "Inter Mia",
+      "away": "Austin FC",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.18666666666666668,
+        "X": 0.8133333333333334,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 0.9539744041329107,
+        "X": 1.2328284607256075,
+        "2": 0.9862627685804859
+      },
+      "odds": {
+        "1": 1.4,
+        "X": 5.2,
+        "2": 7.5
+      },
+      "folk": {
+        "1": 0.72,
+        "X": 0.15,
+        "2": 0.13
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 2,
+      "home": "Charlotte",
+      "away": "Philadelp",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.41333333333333333,
+        "X": 0.38666666666666666,
+        "2": 0.2
+      },
+      "ev": {
+        "1": 0.8784139897563414,
+        "X": 1.054772490776653,
+        "2": 1.1813451896698515
+      },
+      "odds": {
+        "1": 2.23,
+        "X": 3.5,
+        "2": 3.25
+      },
+      "folk": {
+        "1": 0.49,
+        "X": 0.26,
+        "2": 0.25
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 3,
+      "home": "DC United",
+      "away": "FC Dallas",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.52,
+        "X": 0.30666666666666664,
+        "2": 0.17333333333333334
+      },
+      "ev": {
+        "1": 1.026854695170849,
+        "X": 0.9457179990598125,
+        "2": 1.015771184175354
+      },
+      "odds": {
+        "1": 2.28,
+        "X": 3.5,
+        "2": 3.15
+      },
+      "folk": {
+        "1": 0.41,
+        "X": 0.29,
+        "2": 0.3
+      },
+      "reasoning": "Full system recommended - no clear favorite"
+    },
+    {
+      "index": 4,
+      "home": "Atlanta",
+      "away": "Columbus",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.17333333333333334,
+        "X": 0.0,
+        "2": 0.8266666666666667
+      },
+      "ev": {
+        "1": 0.8130706391158096,
+        "X": 0.9870610639471763,
+        "2": 1.2371674457210255
+      },
+      "odds": {
+        "1": 2.95,
+        "X": 3.6,
+        "2": 2.35
+      },
+      "folk": {
+        "1": 0.4,
+        "X": 0.27,
+        "2": 0.33
+      },
+      "reasoning": "Strong spike candidate on 2 (EV: 1.24)"
+    },
+    {
+      "index": 5,
+      "home": "NY Red Bu",
+      "away": "Cincinnat",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.4666666666666667,
+        "X": 0.37333333333333335,
+        "2": 0.16
+      },
+      "ev": {
+        "1": 0.9969551850538017,
+        "X": 1.007449450159631,
+        "2": 0.9985153653121017
+      },
+      "odds": {
+        "1": 2.0,
+        "X": 3.8,
+        "2": 3.55
+      },
+      "folk": {
+        "1": 0.48,
+        "X": 0.25,
+        "2": 0.27
+      },
+      "reasoning": "Full system recommended - no clear favorite"
+    },
+    {
+      "index": 6,
+      "home": "Chicago",
+      "away": "Nashville",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.76,
+        "X": 0.24,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 1.4111836302698888,
+        "X": 1.034665239262535,
+        "2": 0.708873637530921
+      },
+      "odds": {
+        "1": 2.43,
+        "X": 3.2,
+        "2": 3.15
+      },
+      "folk": {
+        "1": 0.28,
+        "X": 0.29,
+        "2": 0.43
+      },
+      "reasoning": "Strong spike candidate on 1 (EV: 1.41)"
+    },
+    {
+      "index": 7,
+      "home": "Houston",
+      "away": "Seattle",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.24,
+        "X": 0.41333333333333333,
+        "2": 0.3466666666666667
+      },
+      "ev": {
+        "1": 1.1003213636998743,
+        "X": 0.9734475738038681,
+        "2": 0.9298037254656831
+      },
+      "odds": {
+        "1": 2.55,
+        "X": 3.5,
+        "2": 2.7
+      },
+      "folk": {
+        "1": 0.34,
+        "X": 0.28,
+        "2": 0.38
+      },
+      "reasoning": "Half-system suitable, favor 1"
+    }
+  ],
+  "rules_applied": [],
+  "risk_level": "high",
+  "spf_count": 1,
+  "contrarian_plays": [
+    "M8:2"
+  ],
+  "ram_ascii": "M01 1:0.19 X:0.81 2:0.00\nM02 1:0.41 X:0.39 2:0.20\nM03 1:0.52 X:0.31 2:0.17\nM04 1:0.17 X:0.00 2:0.83\nM05 1:0.47 X:0.37 2:0.16\nM06 1:0.76 X:0.24 2:0.00\nM07 1:0.24 X:0.41 2:0.35\nM08 1:0.00 X:0.00 2:1.00",
+  "selective_betting": {
+    "verdict": "SKIP",
+    "recommendation": "SKIP",
+    "reason": "EV too low: 1.050 ≤ 1.05",
+    "metrics": {
+      "avg_ev": 1.05,
+      "n_spf": 1,
+      "n_heavy_fav": 1,
+      "n_open_match": 6,
+      "ev_divergence": 0.0524,
+      "elo_edge": 0.0,
+      "elo_enabled": false,
+      "scenario": "aggressive"
+    },
+    "strategy": "aggressive"
+  },
+  "timestamp": "2026-04-04T20:52:10+00:00",
+  "xg_model_rows": null,
+  "oracle_prioritization_rows": null,
+  "match_context": null,
+  "verdicts_extended": null,
+  "scenario_plan": null,
+  "coach_assessment": null,
+  "combinatorics": null,
+  "provenance": null
+}

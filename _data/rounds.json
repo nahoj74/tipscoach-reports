@@ -42,5 +42,28 @@
     "has_analysis": true,
     "submission_trusted": false,
     "has_coupon": true
+  },
+  "topptipset-4056": {
+    "id": "topptipset-4056",
+    "round_id": "topptipset-4056",
+    "game": "topptipset",
+    "draw_number": 4056,
+    "grade": "A",
+    "has_analysis": true,
+    "published_at": "2026-04-04T20:52:10+00:00",
+    "strategy": "balans",
+    "rows": 75,
+    "median_ev": 1.089944,
+    "verdict": "SKIP",
+    "has_report": true,
+    "submission_trusted": false,
+    "has_coupon": true,
+    "urls": {
+      "summary": "rounds/topptipset-4056/index.html",
+      "analysis": "rounds/topptipset-4056/analysis.html",
+      "report": "rounds/topptipset-4056/report.html",
+      "coupon": "rounds/topptipset-4056/system.txt",
+      "coupon_preview": "rounds/topptipset-4056/coupon.html"
+    }
   }
 }

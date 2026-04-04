@@ -1,0 +1,75 @@
+{
+  "game": "topptipset",
+  "draw_number": 4056,
+  "round_id": "topptipset-4056",
+  "version_id": null,
+  "coupon_id": null,
+  "draw_quality_grade": "A",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "coupon_preview_url": "coupon.html",
+  "strategy": "balans",
+  "rows": 75,
+  "median_ev": 1.089944,
+  "selective_betting_verdict": "SKIP",
+  "matches": [
+    {
+      "index": 1,
+      "home": "Inter Mia",
+      "away": "Austin FC",
+      "best_sign": "X",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 2,
+      "home": "Charlotte",
+      "away": "Philadelp",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 3,
+      "home": "DC United",
+      "away": "FC Dallas",
+      "best_sign": "1",
+      "decision": "HEL"
+    },
+    {
+      "index": 4,
+      "home": "Atlanta",
+      "away": "Columbus",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 5,
+      "home": "NY Red Bu",
+      "away": "Cincinnat",
+      "best_sign": "X",
+      "decision": "HEL"
+    },
+    {
+      "index": 6,
+      "home": "Chicago",
+      "away": "Nashville",
+      "best_sign": "1",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 7,
+      "home": "Houston",
+      "away": "Seattle",
+      "best_sign": "1",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 8,
+      "home": "San Jose",
+      "away": "San Diego",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    }
+  ],
+  "timestamp": "2026-04-04T20:52:10+00:00"
+}
