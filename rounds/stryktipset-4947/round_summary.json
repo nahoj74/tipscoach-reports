@@ -1,0 +1,110 @@
+{
+  "game": "stryktipset",
+  "draw_number": 4947,
+  "round_id": "stryktipset-4947",
+  "version_id": null,
+  "coupon_id": null,
+  "draw_quality_grade": "A",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "coupon_preview_url": "coupon.html",
+  "strategy": "balans",
+  "rows": 1470,
+  "median_ev": 1.0764304999999998,
+  "selective_betting_verdict": "SKIP",
+  "matches": [
+    {
+      "index": 1,
+      "home": "Southampton",
+      "away": "Arsenal",
+      "best_sign": "2",
+      "decision": "HALV X2"
+    },
+    {
+      "index": 2,
+      "home": "Chelsea",
+      "away": "Port Vale",
+      "best_sign": "1",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 3,
+      "home": "Atlético Madrid",
+      "away": "Barcelona",
+      "best_sign": "1",
+      "decision": "HEL"
+    },
+    {
+      "index": 4,
+      "home": "Mallorca",
+      "away": "Real Madrid",
+      "best_sign": "X",
+      "decision": "HEL"
+    },
+    {
+      "index": 5,
+      "home": "Real Betis",
+      "away": "Espanyol",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 6,
+      "home": "Lazio",
+      "away": "Parma",
+      "best_sign": "X",
+      "decision": "HEL"
+    },
+    {
+      "index": 7,
+      "home": "Verona",
+      "away": "Fiorentina",
+      "best_sign": "1",
+      "decision": "HEL"
+    },
+    {
+      "index": 8,
+      "home": "Stuttgart",
+      "away": "Dortmund",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 9,
+      "home": "Strasbourg",
+      "away": "Nice",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 10,
+      "home": "Brest",
+      "away": "Rennes",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 11,
+      "home": "Lille",
+      "away": "Lens",
+      "best_sign": "X",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 12,
+      "home": "OH Leuven",
+      "away": "Standard Liege",
+      "best_sign": "X",
+      "decision": "HEL"
+    },
+    {
+      "index": 13,
+      "home": "Ajax",
+      "away": "Twente",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    }
+  ],
+  "timestamp": "2026-04-04T08:40:09+00:00"
+}

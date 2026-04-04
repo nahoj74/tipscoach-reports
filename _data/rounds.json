@@ -29,10 +29,18 @@
     "median_ev": 1.0764304999999998,
     "verdict": "SKIP",
     "has_report": true,
-    "published_at": "2026-04-04T08:40:01+00:00",
+    "published_at": "2026-04-04T08:40:09+00:00",
     "urls": {
       "report": "rounds/stryktipset-4947/report.html",
-      "summary": "rounds/stryktipset-4947/index.html"
-    }
+      "summary": "rounds/stryktipset-4947/index.html",
+      "analysis": "rounds/stryktipset-4947/analysis.html",
+      "coupon": "rounds/stryktipset-4947/system.txt",
+      "coupon_preview": "rounds/stryktipset-4947/coupon.html"
+    },
+    "round_id": "stryktipset-4947",
+    "grade": "A",
+    "has_analysis": true,
+    "submission_trusted": false,
+    "has_coupon": true
   }
 }
