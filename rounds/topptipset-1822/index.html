@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omgångssammanfattning topptipset #1822</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #f2f4f7;
+      --text: #122026;
+      --muted: #4a5b63;
+      --line: #d9e1e6;
+      --brand: #176b87;
+      --ok: #1f9d55;
+      --warn: #d97706;
+      --bad: #dc2626;
+      --info: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #ecf3f6 0%, #f5f7fa 55%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--brand);
+      margin: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { text-decoration: none; }
+
+    .btn-primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--brand);
+      border-color: #9ec5d0;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: #23343b;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+
+    .badge.grade-a { color: #0f5132; border-color: #a8d5ba; background: #e8f7ee; }
+    .badge.grade-b { color: #0f4d67; border-color: #9cc8da; background: #e8f2f8; }
+    .badge.grade-c { color: #7a4f01; border-color: #e8c68b; background: #fff5df; }
+    .badge.grade-d { color: #7f1d1d; border-color: #f1a7a7; background: #fdeeee; }
+
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .bad { color: var(--bad); font-weight: 600; }
+    .mono {
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      white-space: pre;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: auto;
+      font-size: 0.86rem;
+    }
+
+    .table-scroll {
+      overflow: auto;
+      max-height: 380px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    a { color: var(--info); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 6px; }
+      .actions .btn { width: 100%; }
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <p class="brand">Tipscoach</p>
+      <p class="meta">
+topptipset #1822 · 2026-04-05T12:50:39+00:00      </p>
+    </header>
+
+<div class="card">
+  <h1>Omgångssammanfattning</h1>
+  <p>
+    <span class="badge grade-a">Kvalitet A</span>
+    <span class="badge">Rader 125</span>
+    <span class="badge">Median EV 1.041</span>
+    <span class="badge">Selective SKIP</span>
+  </p>
+</div>
+
+<div class="card">
+  <h2>Artefakter</h2>
+  <table>
+    <thead><tr><th>Del</th><th>Status</th><th>Länk</th></tr></thead>
+    <tbody>
+      <tr><td>Analys</td><td>klar</td><td><a href="analysis.html">Öppna</a></td></tr>
+      <tr><td>Rapport</td><td>klar</td><td><a href="report.html">Öppna</a></td></tr>
+      <tr><td>Kupongvy</td><td>klar</td><td><a href="coupon.html">Öppna</a></td></tr>
+      <tr><td>System.txt</td><td>klar</td><td><a href="system.txt">Öppna</a></td></tr>
+      <tr><td>Agentsammanfattning</td><td>saknas</td><td>-</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Matcher</h2>
+  <table>
+    <thead><tr><th>#</th><th>Match</th><th>Best</th><th>Beslut</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>West Ham - Leeds</td>
+        <td>2</td>
+        <td>SPIK 2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Inter - Roma</td>
+        <td>2</td>
+        <td>SPIK 1</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Cremonese - Bologna</td>
+        <td>1</td>
+        <td>HEL</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Pisa - Torino</td>
+        <td>X</td>
+        <td>SPIK X</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Örgryte - Malmö</td>
+        <td>1</td>
+        <td>HEL</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Valencia - Celta Vig</td>
+        <td>X</td>
+        <td>SPIK 1</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>R. Oviedo - Sevilla</td>
+        <td>X</td>
+        <td>HEL</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Alavés - Osasuna</td>
+        <td>2</td>
+        <td>SPIK 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <footer>
+      Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.
+    </footer>
+  </div>
+</body>
+</html>

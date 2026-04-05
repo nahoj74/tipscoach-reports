@@ -88,5 +88,28 @@
       "coupon": "rounds/topptipset-4058/system.txt",
       "coupon_preview": "rounds/topptipset-4058/coupon.html"
     }
+  },
+  "topptipset-1822": {
+    "id": "topptipset-1822",
+    "round_id": "topptipset-1822",
+    "game": "topptipset",
+    "draw_number": 1822,
+    "grade": "A",
+    "has_analysis": true,
+    "published_at": "2026-04-05T12:50:39+00:00",
+    "strategy": "balans",
+    "rows": 125,
+    "median_ev": 1.041072,
+    "verdict": "SKIP",
+    "has_report": true,
+    "submission_trusted": false,
+    "has_coupon": true,
+    "urls": {
+      "summary": "rounds/topptipset-1822/index.html",
+      "analysis": "rounds/topptipset-1822/analysis.html",
+      "report": "rounds/topptipset-1822/report.html",
+      "coupon": "rounds/topptipset-1822/system.txt",
+      "coupon_preview": "rounds/topptipset-1822/coupon.html"
+    }
   }
 }

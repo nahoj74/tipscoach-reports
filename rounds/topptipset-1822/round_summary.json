@@ -1,0 +1,76 @@
+{
+  "game": "topptipset",
+  "draw_number": 1822,
+  "round_id": "topptipset-1822",
+  "version_id": null,
+  "coupon_id": null,
+  "draw_quality_grade": "A",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "coupon_preview_url": "coupon.html",
+  "agent_summary_url": null,
+  "strategy": "balans",
+  "rows": 125,
+  "median_ev": 1.041072,
+  "selective_betting_verdict": "SKIP",
+  "matches": [
+    {
+      "index": 1,
+      "home": "West Ham",
+      "away": "Leeds",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 2,
+      "home": "Inter",
+      "away": "Roma",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 3,
+      "home": "Cremonese",
+      "away": "Bologna",
+      "best_sign": "1",
+      "decision": "HEL"
+    },
+    {
+      "index": 4,
+      "home": "Pisa",
+      "away": "Torino",
+      "best_sign": "X",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 5,
+      "home": "Örgryte",
+      "away": "Malmö",
+      "best_sign": "1",
+      "decision": "HEL"
+    },
+    {
+      "index": 6,
+      "home": "Valencia",
+      "away": "Celta Vig",
+      "best_sign": "X",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 7,
+      "home": "R. Oviedo",
+      "away": "Sevilla",
+      "best_sign": "X",
+      "decision": "HEL"
+    },
+    {
+      "index": 8,
+      "home": "Alavés",
+      "away": "Osasuna",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    }
+  ],
+  "timestamp": "2026-04-05T12:50:39+00:00"
+}

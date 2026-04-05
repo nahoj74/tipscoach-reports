@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kupongrapport topptipset #1822</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #f2f4f7;
+      --text: #122026;
+      --muted: #4a5b63;
+      --line: #d9e1e6;
+      --brand: #176b87;
+      --ok: #1f9d55;
+      --warn: #d97706;
+      --bad: #dc2626;
+      --info: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #ecf3f6 0%, #f5f7fa 55%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--brand);
+      margin: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { text-decoration: none; }
+
+    .btn-primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--brand);
+      border-color: #9ec5d0;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: #23343b;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+
+    .badge.grade-a { color: #0f5132; border-color: #a8d5ba; background: #e8f7ee; }
+    .badge.grade-b { color: #0f4d67; border-color: #9cc8da; background: #e8f2f8; }
+    .badge.grade-c { color: #7a4f01; border-color: #e8c68b; background: #fff5df; }
+    .badge.grade-d { color: #7f1d1d; border-color: #f1a7a7; background: #fdeeee; }
+
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .bad { color: var(--bad); font-weight: 600; }
+    .mono {
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      white-space: pre;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: auto;
+      font-size: 0.86rem;
+    }
+
+    .table-scroll {
+      overflow: auto;
+      max-height: 380px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    a { color: var(--info); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 6px; }
+      .actions .btn { width: 100%; }
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <p class="brand">Tipscoach</p>
+      <p class="meta">
+topptipset #1822 · 2026-04-05T12:50:39+00:00      </p>
+    </header>
+
+<div class="card">
+  <h1>Kupongrapport</h1>
+  <p class="meta">Strategi balans · Rader 125 · Median EV 1.041 · Odds 910 - 4760</p>
+  <p>
+    <span class="badge">Risk high</span>
+    <span class="badge">SPF 1</span>
+    <span class="badge">Selective SKIP</span>
+  </p>
+  <p><small><strong>Genererad:</strong> 2026-04-05T12:50:39+00:00</small></p>
+</div>
+
+<div class="card">
+  <h2>RAM</h2>
+  <div class="mono">M01 1:0.00 X:0.00 2:1.00
+M02 1:0.72 X:0.23 2:0.05
+M03 1:0.27 X:0.38 2:0.35
+M04 1:0.12 X:0.60 2:0.28
+M05 1:0.01 X:0.10 2:0.89
+M06 1:0.58 X:0.36 2:0.06
+M07 1:0.26 X:0.67 2:0.06
+M08 1:0.32 X:0.20 2:0.48</div>
+</div>
+
+
+<div class="card">
+  <h2>Spikar</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>West Ham - Leeds</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.00<br>X: 0.00<br>2: 1.00</td>
+        <td>1: 0.70<br>X: 1.16<br>2: 1.43</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="card">
+  <h2>Tunga tecken</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5</td>
+        <td>Örgryte - Malmö</td>
+        <td class="warn">HEL</td>
+        <td>1: 0.01<br>X: 0.10<br>2: 0.89</td>
+        <td>1: 1.20<br>X: 1.11<br>2: 0.92</td>
+        <td>Half-system suitable, favor 1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="card">
+  <h2>Öppna matcher</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>Inter - Roma</td>
+        <td class="meta">SPIK 1</td>
+        <td>1: 0.72<br>X: 0.23<br>2: 0.05</td>
+        <td>1: 0.85<br>X: 1.21<br>2: 1.66</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Cremonese - Bologna</td>
+        <td class="meta">HEL</td>
+        <td>1: 0.27<br>X: 0.38<br>2: 0.35</td>
+        <td>1: 1.14<br>X: 1.03<br>2: 0.90</td>
+        <td>Half-system suitable, favor 1</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Pisa - Torino</td>
+        <td class="meta">SPIK X</td>
+        <td>1: 0.12<br>X: 0.60<br>2: 0.28</td>
+        <td>1: 0.96<br>X: 1.11<br>2: 0.95</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Valencia - Celta Vig</td>
+        <td class="meta">SPIK 1</td>
+        <td>1: 0.58<br>X: 0.36<br>2: 0.06</td>
+        <td>1: 0.94<br>X: 1.14<br>2: 0.97</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>R. Oviedo - Sevilla</td>
+        <td class="meta">HEL</td>
+        <td>1: 0.26<br>X: 0.67<br>2: 0.06</td>
+        <td>1: 1.06<br>X: 1.13<br>2: 0.86</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Alavés - Osasuna</td>
+        <td class="meta">SPIK 2</td>
+        <td>1: 0.32<br>X: 0.20<br>2: 0.48</td>
+        <td>1: 0.84<br>X: 0.93<br>2: 1.38</td>
+        <td>Strong spike candidate on 2 (EV: 1.38)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Issue #813: xG/xP/Poisson per match section -->
+
+<!-- Issue #813: Oracle-weighted prioritization section -->
+
+<!-- Issue #813: Coach assessment section -->
+
+<!-- Issue #813: Scenario plan section -->
+
+<div class="card">
+  <h2>Regler och contrarian</h2>
+  <p><strong>Regler:</strong> Inga registrerade</p>
+  <p><strong>Contrarian:</strong> M1:2</p>
+</div>
+
+<!-- Issue #813: Provenans section -->
+
+    <footer>
+      Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.
+    </footer>
+  </div>
+</body>
+</html>

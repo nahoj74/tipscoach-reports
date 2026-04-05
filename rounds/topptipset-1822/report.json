@@ -1,0 +1,263 @@
+{
+  "game": "topptipset",
+  "draw_number": 1822,
+  "strategy": "balans",
+  "rows": 125,
+  "median_ev": 1.041072,
+  "odds_min": 910,
+  "odds_max": 4760,
+  "spikes": [
+    {
+      "index": 1,
+      "home": "West Ham",
+      "away": "Leeds",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.0,
+        "X": 0.0,
+        "2": 1.0
+      },
+      "ev": {
+        "1": 0.7043706804244135,
+        "X": 1.156429475323664,
+        "2": 1.434829163827509
+      },
+      "odds": {
+        "1": 2.75,
+        "X": 3.35,
+        "2": 2.7
+      },
+      "folk": {
+        "1": 0.5,
+        "X": 0.25,
+        "2": 0.25
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    }
+  ],
+  "heavy": [
+    {
+      "index": 5,
+      "home": "Örgryte",
+      "away": "Malmö",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.008,
+        "X": 0.104,
+        "2": 0.888
+      },
+      "ev": {
+        "1": 1.2026561731431382,
+        "X": 1.1072072705127305,
+        "2": 0.9217147830035188
+      },
+      "odds": {
+        "1": 5.8,
+        "X": 4.2,
+        "2": 1.63
+      },
+      "folk": {
+        "1": 0.14,
+        "X": 0.21,
+        "2": 0.65
+      },
+      "reasoning": "Half-system suitable, favor 1"
+    }
+  ],
+  "open_matches": [
+    {
+      "index": 2,
+      "home": "Inter",
+      "away": "Roma",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.72,
+        "X": 0.232,
+        "2": 0.048
+      },
+      "ev": {
+        "1": 0.8460422000014585,
+        "X": 1.20666768775208,
+        "2": 1.6643692244856279
+      },
+      "odds": {
+        "1": 1.63,
+        "X": 4.0,
+        "2": 5.8
+      },
+      "folk": {
+        "1": 0.7,
+        "X": 0.2,
+        "2": 0.1
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 3,
+      "home": "Cremonese",
+      "away": "Bologna",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.272,
+        "X": 0.376,
+        "2": 0.352
+      },
+      "ev": {
+        "1": 1.1408513816280805,
+        "X": 1.033820548383655,
+        "2": 0.9049306405224604
+      },
+      "odds": {
+        "1": 3.4,
+        "X": 3.35,
+        "2": 2.28
+      },
+      "folk": {
+        "1": 0.25,
+        "X": 0.28,
+        "2": 0.47
+      },
+      "reasoning": "Half-system suitable, favor 1"
+    },
+    {
+      "index": 4,
+      "home": "Pisa",
+      "away": "Torino",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.12,
+        "X": 0.6,
+        "2": 0.28
+      },
+      "ev": {
+        "1": 0.9643201542912246,
+        "X": 1.113956040301932,
+        "2": 0.9455041512806643
+      },
+      "odds": {
+        "1": 3.35,
+        "X": 3.0,
+        "2": 2.5
+      },
+      "folk": {
+        "1": 0.3,
+        "X": 0.29,
+        "2": 0.41
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 6,
+      "home": "Valencia",
+      "away": "Celta Vig",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.584,
+        "X": 0.36,
+        "2": 0.056
+      },
+      "ev": {
+        "1": 0.9417043463810163,
+        "X": 1.1358062304821388,
+        "2": 0.9732210644252196
+      },
+      "odds": {
+        "1": 2.33,
+        "X": 3.4,
+        "2": 3.2
+      },
+      "folk": {
+        "1": 0.44,
+        "X": 0.25,
+        "2": 0.31
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 7,
+      "home": "R. Oviedo",
+      "away": "Sevilla",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.264,
+        "X": 0.672,
+        "2": 0.064
+      },
+      "ev": {
+        "1": 1.0572845110805806,
+        "X": 1.1271110159035531,
+        "2": 0.8584788765184201
+      },
+      "odds": {
+        "1": 2.85,
+        "X": 2.95,
+        "2": 2.88
+      },
+      "folk": {
+        "1": 0.32,
+        "X": 0.29,
+        "2": 0.39
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 8,
+      "home": "Alavés",
+      "away": "Osasuna",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.32,
+        "X": 0.2,
+        "2": 0.48
+      },
+      "ev": {
+        "1": 0.8429060615124986,
+        "X": 0.9267177437651618,
+        "2": 1.382223075446343
+      },
+      "odds": {
+        "1": 2.7,
+        "X": 3.2,
+        "2": 2.95
+      },
+      "folk": {
+        "1": 0.43,
+        "X": 0.33,
+        "2": 0.24
+      },
+      "reasoning": "Strong spike candidate on 2 (EV: 1.38)"
+    }
+  ],
+  "rules_applied": [],
+  "risk_level": "high",
+  "spf_count": 1,
+  "contrarian_plays": [
+    "M1:2"
+  ],
+  "ram_ascii": "M01 1:0.00 X:0.00 2:1.00\nM02 1:0.72 X:0.23 2:0.05\nM03 1:0.27 X:0.38 2:0.35\nM04 1:0.12 X:0.60 2:0.28\nM05 1:0.01 X:0.10 2:0.89\nM06 1:0.58 X:0.36 2:0.06\nM07 1:0.26 X:0.67 2:0.06\nM08 1:0.32 X:0.20 2:0.48",
+  "selective_betting": {
+    "verdict": "SKIP",
+    "recommendation": "SKIP",
+    "reason": "EV too low: 1.031 ≤ 1.05",
+    "metrics": {
+      "avg_ev": 1.0311,
+      "n_spf": 2,
+      "n_heavy_fav": 0,
+      "n_open_match": 6,
+      "ev_divergence": 0.0706,
+      "elo_edge": 0.0,
+      "elo_enabled": false,
+      "scenario": "aggressive"
+    },
+    "strategy": "aggressive"
+  },
+  "timestamp": "2026-04-05T12:50:39+00:00",
+  "xg_model_rows": null,
+  "oracle_prioritization_rows": null,
+  "match_context": null,
+  "verdicts_extended": null,
+  "scenario_plan": null,
+  "coach_assessment": null,
+  "combinatorics": null,
+  "provenance": null
+}
