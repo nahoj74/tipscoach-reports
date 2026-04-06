@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kupongrapport topptipset #4061</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #f2f4f7;
+      --text: #122026;
+      --muted: #4a5b63;
+      --line: #d9e1e6;
+      --brand: #176b87;
+      --ok: #1f9d55;
+      --warn: #d97706;
+      --bad: #dc2626;
+      --info: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #ecf3f6 0%, #f5f7fa 55%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--brand);
+      margin: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { text-decoration: none; }
+
+    .btn-primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--brand);
+      border-color: #9ec5d0;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: #23343b;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+
+    .badge.grade-a { color: #0f5132; border-color: #a8d5ba; background: #e8f7ee; }
+    .badge.grade-b { color: #0f4d67; border-color: #9cc8da; background: #e8f2f8; }
+    .badge.grade-c { color: #7a4f01; border-color: #e8c68b; background: #fff5df; }
+    .badge.grade-d { color: #7f1d1d; border-color: #f1a7a7; background: #fdeeee; }
+
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .bad { color: var(--bad); font-weight: 600; }
+    .mono {
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      white-space: pre;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: auto;
+      font-size: 0.86rem;
+    }
+
+    .table-scroll {
+      overflow: auto;
+      max-height: 380px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    a { color: var(--info); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 6px; }
+      .actions .btn { width: 100%; }
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <p class="brand">Tipscoach</p>
+      <p class="meta">
+topptipset #4061 · 2026-04-06 13:39 UTC      </p>
+    </header>
+
+<div class="card">
+  <h1>Kupongrapport</h1>
+  <p class="meta">Strategi balans · Rader 175 · Median EV 1.000 · Odds 0 - 0</p>
+  <p>
+    <span class="badge">Risk low</span>
+    <span class="badge">SPF 8</span>
+    <span class="badge">Selective PLAY</span>
+  </p>
+  <p><small><strong>Genererad:</strong> 2026-04-06 13:39 UTC</small></p>
+</div>
+
+<div class="card">
+  <h2>RAM</h2>
+  <div class="mono"></div>
+</div>
+
+
+<div class="card">
+  <h2>Spikar</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Argentinos Juniors - Banfield</td>
+        <td class="ok">SPIK X</td>
+        <td>1: 0.00<br>X: 1.00<br>2: 0.00</td>
+        <td>1: 0.88<br>X: 1.59<br>2: 0.98</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Instituto de Cordoba - Defensa Y Justicia</td>
+        <td class="ok">SPIK 1</td>
+        <td>1: 1.00<br>X: 0.00<br>2: 0.00</td>
+        <td>1: 1.40<br>X: 0.77<br>2: 0.87</td>
+        <td>Strong spike candidate on 1 (EV: 1.40)</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Atlético Nacional - Jaguares de Cordoba</td>
+        <td class="ok">SPIK X</td>
+        <td>1: 0.00<br>X: 1.00<br>2: 0.00</td>
+        <td>1: 0.92<br>X: 1.60<br>2: 1.25</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Sportivo Trinidense - Rubio Nu</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.00<br>X: 0.00<br>2: 1.00</td>
+        <td>1: 1.03<br>X: 0.76<br>2: 1.48</td>
+        <td>Strong spike candidate on 2 (EV: 1.48)</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Huachipato - Universidad de Concepcion</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.00<br>X: 0.00<br>2: 1.00</td>
+        <td>1: 1.06<br>X: 0.73<br>2: 1.36</td>
+        <td>Strong spike candidate on 2 (EV: 1.36)</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Libertad Loja - Mushuc Runa SC</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.00<br>X: 0.00<br>2: 1.00</td>
+        <td>1: 0.76<br>X: 1.08<br>2: 1.60</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Municipal Liberia - AD San Carlos</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.00<br>X: 0.00<br>2: 1.00</td>
+        <td>1: 0.95<br>X: 0.92<br>2: 1.25</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Melbourne City - Central Coast</td>
+        <td class="ok">SPIK 1</td>
+        <td>1: 1.00<br>X: 0.00<br>2: 0.00</td>
+        <td>1: 1.15<br>X: 0.86<br>2: 0.73</td>
+        <td>Half-system suitable, favor 1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="card">
+  <h2>Tunga tecken</h2>
+  <p class="meta">Inga poster.</p>
+</div>
+<div class="card">
+  <h2>Öppna matcher</h2>
+  <p class="meta">Inga poster.</p>
+</div>
+
+<!-- Issue #813: xG/xP/Poisson per match section -->
+<div class="card">
+  <h2>🧪 xG/xP/Poisson per match</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>Match</th><th>Källa</th><th>xG Kvalitet</th><th>Täckning</th>
+        <th>xG H/A</th><th>xP H/A</th><th>P(1/X/2)</th><th>Skador</th><th>Rotation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>M1</td>
+        <td>Argentinos Juniors - Banfield</td>
+        <td>playmaker_cache</td>
+        <td>ok</td>
+        <td>full</td>
+        <td>1.23 / 1.0</td>
+        <td>1.529 / 1.185</td>
+        <td>
+          0.4489 / 
+          0.3012 / 
+          0.2499
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M2</td>
+        <td>Instituto de Cordoba - Defensa Y Justicia</td>
+        <td>playmaker_cache</td>
+        <td>ok</td>
+        <td>full</td>
+        <td>1.27 / 0.96</td>
+        <td>1.589 / 1.126</td>
+        <td>
+          0.4711 / 
+          0.297 / 
+          0.2319
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M3</td>
+        <td>Atlético Nacional - Jaguares de Cordoba</td>
+        <td>playmaker_cache</td>
+        <td>ok</td>
+        <td>full</td>
+        <td>1.47 / 0.97</td>
+        <td>1.726 / 1.011</td>
+        <td>
+          0.5281 / 
+          0.2709 / 
+          0.2011
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M4</td>
+        <td>Sportivo Trinidense - Rubio Nu</td>
+        <td>playmaker_cache</td>
+        <td>ok</td>
+        <td>full</td>
+        <td>1.08 / 1.09</td>
+        <td>1.346 / 1.361</td>
+        <td>
+          0.38 / 
+          0.3145 / 
+          0.3055
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M5</td>
+        <td>Huachipato - Universidad de Concepcion</td>
+        <td>playmaker_cache</td>
+        <td>ok</td>
+        <td>full</td>
+        <td>1.15 / 1.12</td>
+        <td>1.379 / 1.335</td>
+        <td>
+          0.3959 / 
+          0.3055 / 
+          0.2986
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M6</td>
+        <td>Libertad Loja - Mushuc Runa SC</td>
+        <td>sonar_pro</td>
+        <td>unknown</td>
+        <td>missing</td>
+        <td>- / -</td>
+        <td>- / -</td>
+        <td>
+          - / 
+          - / 
+          -
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M7</td>
+        <td>Municipal Liberia - AD San Carlos</td>
+        <td>sonar_pro</td>
+        <td>unknown</td>
+        <td>missing</td>
+        <td>- / -</td>
+        <td>- / -</td>
+        <td>
+          - / 
+          - / 
+          -
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:MED A:MED</td>
+      </tr>
+      <tr>
+        <td>M8</td>
+        <td>Melbourne City - Central Coast</td>
+        <td>playmaker_cache</td>
+        <td>ok</td>
+        <td>full</td>
+        <td>1.34 / 1.1</td>
+        <td>1.537 / 1.191</td>
+        <td>
+          0.459 / 
+          0.2855 / 
+          0.2555
+        </td>
+        <td>H:0 A:0</td>
+        <td>H:LOW A:LOW</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Issue #813: Oracle-weighted prioritization section -->
+<div class="card">
+  <h2>🧭 Orakel-viktad prioritering</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Prio</th><th>Match</th><th>Tecken</th><th>EV</th><th>Asymmetri</th>
+        <th>Standings adj</th><th>Spike-score</th><th>Viktklass</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>M3</td>
+        <td>X</td>
+        <td>1.6006</td>
+        <td>0.0541</td>
+        <td>0.0379</td>
+        <td>0.2883</td>
+        <td>LOW</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>M6</td>
+        <td>2</td>
+        <td>1.5988</td>
+        <td>0.1138</td>
+        <td>-0.0267</td>
+        <td>0.2395</td>
+        <td>MEDIUM</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>M1</td>
+        <td>X</td>
+        <td>1.5927</td>
+        <td>0.0889</td>
+        <td>0.0559</td>
+        <td>0.2371</td>
+        <td>LOW</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>M4</td>
+        <td>2</td>
+        <td>1.4764</td>
+        <td>0.081</td>
+        <td>-0.0182</td>
+        <td>0.3265</td>
+        <td>LOW</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>M2</td>
+        <td>1</td>
+        <td>1.4001</td>
+        <td>0.128</td>
+        <td>-0.0153</td>
+        <td>0.3261</td>
+        <td>MEDIUM</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>M5</td>
+        <td>2</td>
+        <td>1.3631</td>
+        <td>0.0762</td>
+        <td>0.0267</td>
+        <td>0.2992</td>
+        <td>LOW</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>M7</td>
+        <td>2</td>
+        <td>1.2488</td>
+        <td>0.0473</td>
+        <td>-0.0105</td>
+        <td>0.0995</td>
+        <td>LOW</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>M8</td>
+        <td>1</td>
+        <td>1.1497</td>
+        <td>0.0853</td>
+        <td>-0.0091</td>
+        <td>0.0719</td>
+        <td>LOW</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Issue #813: Coach assessment section -->
+<div class="card">
+  <h2>🧠 Coach-bedömning</h2>
+  <ul>
+    <li><strong>Nära-forcerade matcher (≥85%):</strong> 8</li>
+    <li><strong>EV-deviation:</strong> 1, 4, 5, 7</li>
+    <li><strong>Implicit beroenderisk:</strong> medium</li>
+  </ul>
+</div>
+
+<!-- Issue #813: Scenario plan section -->
+
+<div class="card">
+  <h2>Regler och contrarian</h2>
+  <p><strong>Regler:</strong> Inga registrerade</p>
+  <p><strong>Contrarian:</strong> M1:X, M2:1, M3:X, M4:2, M5:2, M6:2, M7:2</p>
+</div>
+
+<!-- Issue #813: Provenans section -->
+
+    <footer>
+      Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.
+    </footer>
+  </div>
+</body>
+</html>

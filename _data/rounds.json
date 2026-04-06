@@ -111,5 +111,20 @@
       "coupon": "rounds/topptipset-1822/system.txt",
       "coupon_preview": "rounds/topptipset-1822/coupon.html"
     }
+  },
+  "topptipset-4061": {
+    "id": "topptipset-4061",
+    "game": "topptipset",
+    "draw_number": 4061,
+    "strategy": "balans",
+    "rows": 175,
+    "median_ev": 1.0,
+    "verdict": "PLAY",
+    "has_report": true,
+    "published_at": "2026-04-06 13:39 UTC",
+    "urls": {
+      "report": "rounds/topptipset-4061/report.html",
+      "summary": "rounds/topptipset-4061/index.html"
+    }
   }
 }
