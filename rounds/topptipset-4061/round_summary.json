@@ -1,0 +1,76 @@
+{
+  "game": "topptipset",
+  "draw_number": 4061,
+  "round_id": "topptipset-4061",
+  "version_id": null,
+  "coupon_id": null,
+  "draw_quality_grade": "A",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "coupon_preview_url": "coupon.html",
+  "agent_summary_url": null,
+  "strategy": "balans",
+  "rows": 175,
+  "median_ev": 1.075649,
+  "selective_betting_verdict": "PLAY",
+  "matches": [
+    {
+      "index": 1,
+      "home": "Argentinos Juniors",
+      "away": "Banfield",
+      "best_sign": "X",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 2,
+      "home": "Instituto de Cordoba",
+      "away": "Defensa Y Justicia",
+      "best_sign": "1",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 3,
+      "home": "Atlético Nacional",
+      "away": "Jaguares de Cordoba",
+      "best_sign": "X",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 4,
+      "home": "Sportivo Trinidense",
+      "away": "Rubio Nu",
+      "best_sign": "2",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 5,
+      "home": "Huachipato",
+      "away": "Universidad de Concepcion",
+      "best_sign": "2",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 6,
+      "home": "Libertad Loja",
+      "away": "Mushuc Runa SC",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 7,
+      "home": "Municipal Liberia",
+      "away": "AD San Carlos",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 8,
+      "home": "Melbourne City",
+      "away": "Central Coast",
+      "best_sign": "1",
+      "decision": "SPIK 1"
+    }
+  ],
+  "timestamp": "2026-04-06T13:40:41+00:00"
+}
