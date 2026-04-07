@@ -1,0 +1,22 @@
+{
+  "release_id": "r20260407T103624_829106",
+  "round_id": "europatipset-2564",
+  "game": "europatipset",
+  "draw_number": 2564,
+  "version_id": null,
+  "strategy": "balans",
+  "rows": 216,
+  "median_ev": 1.1847745,
+  "published_at": "2026-04-07T10:36:24+00:00",
+  "artifacts": {
+    "analysis": "rounds/europatipset-2564/releases/r20260407T103624_829106/analysis.html",
+    "analysis_json": "rounds/europatipset-2564/releases/r20260407T103624_829106/analysis.json",
+    "report": "rounds/europatipset-2564/releases/r20260407T103624_829106/report.html",
+    "report_json": "rounds/europatipset-2564/releases/r20260407T103624_829106/report.json",
+    "coupon_preview": "rounds/europatipset-2564/releases/r20260407T103624_829106/coupon.html",
+    "coupon_json": "rounds/europatipset-2564/releases/r20260407T103624_829106/coupon.json",
+    "coupon": "rounds/europatipset-2564/releases/r20260407T103624_829106/system.txt",
+    "summary": "rounds/europatipset-2564/releases/r20260407T103624_829106/index.html",
+    "summary_json": "rounds/europatipset-2564/releases/r20260407T103624_829106/round_summary.json"
+  }
+}
