@@ -1,0 +1,17 @@
+{
+  "release_id": "r20260407T102923_409452",
+  "round_id": "europatipset-2564",
+  "game": "europatipset",
+  "draw_number": 2564,
+  "version_id": null,
+  "strategy": null,
+  "rows": null,
+  "median_ev": null,
+  "published_at": "2026-04-07T10:29:23+00:00",
+  "artifacts": {
+    "analysis": "rounds/europatipset-2564/releases/r20260407T102923_409452/analysis.html",
+    "analysis_json": "rounds/europatipset-2564/releases/r20260407T102923_409452/analysis.json",
+    "summary": "rounds/europatipset-2564/releases/r20260407T102923_409452/index.html",
+    "summary_json": "rounds/europatipset-2564/releases/r20260407T102923_409452/round_summary.json"
+  }
+}
