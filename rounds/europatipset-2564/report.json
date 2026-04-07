@@ -1,0 +1,400 @@
+{
+  "game": "europatipset",
+  "draw_number": 2564,
+  "strategy": "balans",
+  "rows": 188,
+  "median_ev": 1.2194715,
+  "odds_min": 92304,
+  "odds_max": 1220654,
+  "spikes": [
+    {
+      "index": 1,
+      "home": "R. Madrid",
+      "away": "Bayern Mü",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.03723404255319149,
+        "X": 0.0,
+        "2": 0.9627659574468085
+      },
+      "ev": {
+        "1": 0.9555414342535714,
+        "X": 0.8336611492722483,
+        "2": 1.1738332274235685
+      },
+      "odds": {
+        "1": 2.85,
+        "X": 4.2,
+        "2": 2.32
+      },
+      "folk": {
+        "1": 0.36,
+        "X": 0.28,
+        "2": 0.36
+      },
+      "reasoning": "Strong spike candidate on 2 (EV: 1.17)"
+    },
+    {
+      "index": 12,
+      "home": "Deportivo",
+      "away": "Fluminens",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.005319148936170213,
+        "X": 0.010638297872340425,
+        "2": 0.9840425531914894
+      },
+      "ev": {
+        "1": 1.476088698904622,
+        "X": 1.1895220284213073,
+        "2": 0.8553279554671207
+      },
+      "odds": {
+        "1": 5.5,
+        "X": 3.9,
+        "2": 1.7
+      },
+      "folk": {
+        "1": 0.12,
+        "X": 0.21,
+        "2": 0.67
+      },
+      "reasoning": "Half-system suitable, favor 1"
+    }
+  ],
+  "heavy": [
+    {
+      "index": 4,
+      "home": "Barcelona",
+      "away": "At Madrid",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.8617021276595744,
+        "X": 0.0,
+        "2": 0.13829787234042554
+      },
+      "ev": {
+        "1": 0.8204051160463036,
+        "X": 1.2971151821436093,
+        "2": 2.17150979153506
+      },
+      "odds": {
+        "1": 1.54,
+        "X": 5.0,
+        "2": 5.6
+      },
+      "folk": {
+        "1": 0.77,
+        "X": 0.15,
+        "2": 0.08
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 9,
+      "home": "Ayr Unite",
+      "away": "Dunfermli",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.925531914893617,
+        "X": 0.07446808510638298,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 1.2875536480686696,
+        "X": 0.972818311874106,
+        "2": 0.7510729613733906
+      },
+      "odds": {
+        "1": 2.1,
+        "X": 3.15,
+        "2": 3.4
+      },
+      "folk": {
+        "1": 0.34,
+        "X": 0.3,
+        "2": 0.36
+      },
+      "reasoning": "Strong spike candidate on 1 (EV: 1.29)"
+    },
+    {
+      "index": 10,
+      "home": "Montrose",
+      "away": "Cove Rang",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.13297872340425532,
+        "X": 0.0,
+        "2": 0.8670212765957447
+      },
+      "ev": {
+        "1": 0.5480713874496258,
+        "X": 1.8998272884283247,
+        "2": 2.936096718480138
+      },
+      "odds": {
+        "1": 2.2,
+        "X": 3.4,
+        "2": 2.8
+      },
+      "folk": {
+        "1": 0.75,
+        "X": 0.14,
+        "2": 0.11
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    }
+  ],
+  "open_matches": [
+    {
+      "index": 2,
+      "home": "Sp Lissab",
+      "away": "Arsenal",
+      "decision": "HALV 1X",
+      "system_pct": {
+        "1": 0.16489361702127658,
+        "X": 0.8351063829787234,
+        "2": 0.0
+      },
+      "ev": {
+        "1": 1.1506445483901202,
+        "X": 1.2122606325504877,
+        "2": 0.8769777368811185
+      },
+      "odds": {
+        "1": 4.7,
+        "X": 3.65,
+        "2": 1.85
+      },
+      "folk": {
+        "1": 0.18,
+        "X": 0.22,
+        "2": 0.6
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 3,
+      "home": "Paris SG",
+      "away": "Liverpool",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.26595744680851063,
+        "X": 0.5319148936170213,
+        "2": 0.20212765957446807
+      },
+      "ev": {
+        "1": 0.8366670298709586,
+        "X": 1.3308842986784553,
+        "2": 1.3654405927494047
+      },
+      "odds": {
+        "1": 1.71,
+        "X": 4.3,
+        "2": 4.75
+      },
+      "folk": {
+        "1": 0.68,
+        "X": 0.17,
+        "2": 0.15
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 5,
+      "home": "Braga",
+      "away": "Real Beti",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.48936170212765956,
+        "X": 0.11702127659574468,
+        "2": 0.39361702127659576
+      },
+      "ev": {
+        "1": 0.7885275775832922,
+        "X": 0.9698496901997088,
+        "2": 1.4714657890258263
+      },
+      "odds": {
+        "1": 2.63,
+        "X": 3.35,
+        "2": 2.88
+      },
+      "folk": {
+        "1": 0.47,
+        "X": 0.3,
+        "2": 0.23
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 6,
+      "home": "Wrexham",
+      "away": "Southampt",
+      "decision": "HEL",
+      "system_pct": {
+        "1": 0.5425531914893617,
+        "X": 0.32978723404255317,
+        "2": 0.1276595744680851
+      },
+      "ev": {
+        "1": 1.1434690326404955,
+        "X": 1.206154480554625,
+        "2": 0.8002371072910491
+      },
+      "odds": {
+        "1": 2.7,
+        "X": 3.45,
+        "2": 2.6
+      },
+      "folk": {
+        "1": 0.31,
+        "X": 0.23,
+        "2": 0.46
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 7,
+      "home": "Port Vale",
+      "away": "Rotherham",
+      "decision": "HALV X2",
+      "system_pct": {
+        "1": 0.0,
+        "X": 0.675531914893617,
+        "2": 0.324468085106383
+      },
+      "ev": {
+        "1": 0.8726019760332782,
+        "X": 1.1132129351051763,
+        "2": 1.0887325580600393
+      },
+      "odds": {
+        "1": 2.45,
+        "X": 3.25,
+        "2": 2.88
+      },
+      "folk": {
+        "1": 0.44,
+        "X": 0.26,
+        "2": 0.3
+      },
+      "reasoning": "Half-system suitable, favor X"
+    },
+    {
+      "index": 8,
+      "home": "Bromley",
+      "away": "Shrewsbur",
+      "decision": "SPIK X",
+      "system_pct": {
+        "1": 0.26595744680851063,
+        "X": 0.5159574468085106,
+        "2": 0.21808510638297873
+      },
+      "ev": {
+        "1": 0.6745839007774381,
+        "X": 2.0768637379591355,
+        "2": 3.05991257392646
+      },
+      "odds": {
+        "1": 1.68,
+        "X": 3.4,
+        "2": 5.0
+      },
+      "folk": {
+        "1": 0.81,
+        "X": 0.13,
+        "2": 0.06
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 11,
+      "home": "Always Re",
+      "away": "LDU Quito",
+      "decision": "SPIK 2",
+      "system_pct": {
+        "1": 0.31382978723404253,
+        "X": 0.20212765957446807,
+        "2": 0.48404255319148937
+      },
+      "ev": {
+        "1": 0.6951603448450118,
+        "X": 1.1955225428430687,
+        "2": 1.7493622871529848
+      },
+      "odds": {
+        "1": 2.38,
+        "X": 3.55,
+        "2": 3.1
+      },
+      "folk": {
+        "1": 0.59,
+        "X": 0.23,
+        "2": 0.18
+      },
+      "reasoning": "Half-system suitable, favor 2"
+    },
+    {
+      "index": 13,
+      "home": "U. Catoli",
+      "away": "Boca Juni",
+      "decision": "SPIK 1",
+      "system_pct": {
+        "1": 0.4787234042553192,
+        "X": 0.13297872340425532,
+        "2": 0.3882978723404255
+      },
+      "ev": {
+        "1": 1.762313601446001,
+        "X": 1.0031631269769545,
+        "2": 0.7903709485272974
+      },
+      "odds": {
+        "1": 3.7,
+        "X": 3.25,
+        "2": 2.25
+      },
+      "folk": {
+        "1": 0.15,
+        "X": 0.3,
+        "2": 0.55
+      },
+      "reasoning": "Half-system suitable, favor 1"
+    }
+  ],
+  "rules_applied": [],
+  "risk_level": "high",
+  "spf_count": 2,
+  "contrarian_plays": [
+    "M1:2",
+    "M9:1",
+    "M10:2"
+  ],
+  "ram_ascii": "M01 1:0.04 X:0.00 2:0.96\nM02 1:0.16 X:0.84 2:0.00\nM03 1:0.27 X:0.53 2:0.20\nM04 1:0.86 X:0.00 2:0.14\nM05 1:0.49 X:0.12 2:0.39\nM06 1:0.54 X:0.33 2:0.13\nM07 1:0.00 X:0.68 2:0.32\nM08 1:0.27 X:0.52 2:0.22\nM09 1:0.93 X:0.07 2:0.00\nM10 1:0.13 X:0.00 2:0.87\nM11 1:0.31 X:0.20 2:0.48\nM12 1:0.01 X:0.01 2:0.98\nM13 1:0.48 X:0.13 2:0.39",
+  "selective_betting": {
+    "verdict": "PLAY",
+    "recommendation": "PLAY",
+    "reason": "EV=1.122 (>1.10), no SPF filter (13-match game)",
+    "metrics": {
+      "avg_ev": 1.1216,
+      "n_spf": 5,
+      "n_heavy_fav": 1,
+      "n_open_match": 8,
+      "ev_divergence": 0.1334,
+      "elo_edge": 0.0,
+      "elo_enabled": false,
+      "scenario": "aggressive_13match"
+    },
+    "strategy": "aggressive"
+  },
+  "timestamp": "2026-04-07T09:22:07+00:00",
+  "xg_model_rows": null,
+  "oracle_prioritization_rows": null,
+  "match_context": null,
+  "verdicts_extended": null,
+  "scenario_plan": null,
+  "coach_assessment": null,
+  "combinatorics": null,
+  "provenance": null
+}

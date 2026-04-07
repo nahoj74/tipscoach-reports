@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kupongrapport europatipset #2564</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #f2f4f7;
+      --text: #122026;
+      --muted: #4a5b63;
+      --line: #d9e1e6;
+      --brand: #176b87;
+      --ok: #1f9d55;
+      --warn: #d97706;
+      --bad: #dc2626;
+      --info: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 10% 0%, #ecf3f6 0%, #f5f7fa 55%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--brand);
+      margin: 0;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { text-decoration: none; }
+
+    .btn-primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--brand);
+      border-color: #9ec5d0;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: #23343b;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--muted);
+    }
+
+    .badge.grade-a { color: #0f5132; border-color: #a8d5ba; background: #e8f7ee; }
+    .badge.grade-b { color: #0f4d67; border-color: #9cc8da; background: #e8f2f8; }
+    .badge.grade-c { color: #7a4f01; border-color: #e8c68b; background: #fff5df; }
+    .badge.grade-d { color: #7f1d1d; border-color: #f1a7a7; background: #fdeeee; }
+
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    .bad { color: var(--bad); font-weight: 600; }
+    .mono {
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      white-space: pre;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: auto;
+      font-size: 0.86rem;
+    }
+
+    .table-scroll {
+      overflow: auto;
+      max-height: 380px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    a { color: var(--info); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .topbar { flex-direction: column; align-items: flex-start; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 6px; }
+      .actions .btn { width: 100%; }
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <p class="brand">Tipscoach</p>
+      <p class="meta">
+europatipset #2564 · 2026-04-07T09:22:07+00:00      </p>
+    </header>
+
+<div class="card">
+  <h1>Kupongrapport</h1>
+  <p class="meta">Strategi balans · Rader 188 · Median EV 1.219 · Odds 92304 - 1220654</p>
+  <p>
+    <span class="badge">Risk high</span>
+    <span class="badge">SPF 2</span>
+    <span class="badge">Selective PLAY</span>
+  </p>
+  <p><small><strong>Genererad:</strong> 2026-04-07T09:22:07+00:00</small></p>
+</div>
+
+<div class="card">
+  <h2>RAM</h2>
+  <div class="mono">M01 1:0.04 X:0.00 2:0.96
+M02 1:0.16 X:0.84 2:0.00
+M03 1:0.27 X:0.53 2:0.20
+M04 1:0.86 X:0.00 2:0.14
+M05 1:0.49 X:0.12 2:0.39
+M06 1:0.54 X:0.33 2:0.13
+M07 1:0.00 X:0.68 2:0.32
+M08 1:0.27 X:0.52 2:0.22
+M09 1:0.93 X:0.07 2:0.00
+M10 1:0.13 X:0.00 2:0.87
+M11 1:0.31 X:0.20 2:0.48
+M12 1:0.01 X:0.01 2:0.98
+M13 1:0.48 X:0.13 2:0.39</div>
+</div>
+
+
+<div class="card">
+  <h2>Spikar</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>R. Madrid - Bayern Mü</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.04<br>X: 0.00<br>2: 0.96</td>
+        <td>1: 0.96<br>X: 0.83<br>2: 1.17</td>
+        <td>Strong spike candidate on 2 (EV: 1.17)</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Deportivo - Fluminens</td>
+        <td class="ok">SPIK 2</td>
+        <td>1: 0.01<br>X: 0.01<br>2: 0.98</td>
+        <td>1: 1.48<br>X: 1.19<br>2: 0.86</td>
+        <td>Half-system suitable, favor 1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="card">
+  <h2>Tunga tecken</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4</td>
+        <td>Barcelona - At Madrid</td>
+        <td class="warn">SPIK 1</td>
+        <td>1: 0.86<br>X: 0.00<br>2: 0.14</td>
+        <td>1: 0.82<br>X: 1.30<br>2: 2.17</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Ayr Unite - Dunfermli</td>
+        <td class="warn">SPIK 1</td>
+        <td>1: 0.93<br>X: 0.07<br>2: 0.00</td>
+        <td>1: 1.29<br>X: 0.97<br>2: 0.75</td>
+        <td>Strong spike candidate on 1 (EV: 1.29)</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Montrose - Cove Rang</td>
+        <td class="warn">SPIK 2</td>
+        <td>1: 0.13<br>X: 0.00<br>2: 0.87</td>
+        <td>1: 0.55<br>X: 1.90<br>2: 2.94</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="card">
+  <h2>Öppna matcher</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Match</th><th>Beslut</th><th>System %</th><th>EV</th><th>Reasoning</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>Sp Lissab - Arsenal</td>
+        <td class="meta">HALV 1X</td>
+        <td>1: 0.16<br>X: 0.84<br>2: 0.00</td>
+        <td>1: 1.15<br>X: 1.21<br>2: 0.88</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Paris SG - Liverpool</td>
+        <td class="meta">HEL</td>
+        <td>1: 0.27<br>X: 0.53<br>2: 0.20</td>
+        <td>1: 0.84<br>X: 1.33<br>2: 1.37</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Braga - Real Beti</td>
+        <td class="meta">SPIK 1</td>
+        <td>1: 0.49<br>X: 0.12<br>2: 0.39</td>
+        <td>1: 0.79<br>X: 0.97<br>2: 1.47</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Wrexham - Southampt</td>
+        <td class="meta">HEL</td>
+        <td>1: 0.54<br>X: 0.33<br>2: 0.13</td>
+        <td>1: 1.14<br>X: 1.21<br>2: 0.80</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Port Vale - Rotherham</td>
+        <td class="meta">HALV X2</td>
+        <td>1: 0.00<br>X: 0.68<br>2: 0.32</td>
+        <td>1: 0.87<br>X: 1.11<br>2: 1.09</td>
+        <td>Half-system suitable, favor X</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Bromley - Shrewsbur</td>
+        <td class="meta">SPIK X</td>
+        <td>1: 0.27<br>X: 0.52<br>2: 0.22</td>
+        <td>1: 0.67<br>X: 2.08<br>2: 3.06</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Always Re - LDU Quito</td>
+        <td class="meta">SPIK 2</td>
+        <td>1: 0.31<br>X: 0.20<br>2: 0.48</td>
+        <td>1: 0.70<br>X: 1.20<br>2: 1.75</td>
+        <td>Half-system suitable, favor 2</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>U. Catoli - Boca Juni</td>
+        <td class="meta">SPIK 1</td>
+        <td>1: 0.48<br>X: 0.13<br>2: 0.39</td>
+        <td>1: 1.76<br>X: 1.00<br>2: 0.79</td>
+        <td>Half-system suitable, favor 1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Issue #813: xG/xP/Poisson per match section -->
+
+<!-- Issue #813: Oracle-weighted prioritization section -->
+
+<!-- Issue #813: Coach assessment section -->
+
+<!-- Issue #813: Scenario plan section -->
+
+<div class="card">
+  <h2>Regler och contrarian</h2>
+  <p><strong>Regler:</strong> Inga registrerade</p>
+  <p><strong>Contrarian:</strong> M1:2, M9:1, M10:2</p>
+</div>
+
+<!-- Issue #813: Provenans section -->
+
+    <footer>
+      Spela ansvarsfullt. Detta är analysstöd, inte vinstgaranti.<br>
+      <small>Publicerat innehåll licensieras under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank" aria-label="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International">CC BY-NC-ND 4.0</a>.</small>
+    </footer>
+  </div>
+</body>
+</html>

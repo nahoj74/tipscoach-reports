@@ -1,0 +1,111 @@
+{
+  "game": "europatipset",
+  "draw_number": 2564,
+  "round_id": "europatipset-2564",
+  "version_id": null,
+  "coupon_id": "477467aa35af49428a71bb5567b0932c",
+  "draw_quality_grade": "A",
+  "analysis_url": "analysis.html",
+  "report_url": "report.html",
+  "coupon_url": "system.txt",
+  "coupon_preview_url": "coupon.html",
+  "agent_summary_url": null,
+  "strategy": "balans",
+  "rows": 188,
+  "median_ev": 1.2194715,
+  "selective_betting_verdict": "PLAY",
+  "matches": [
+    {
+      "index": 1,
+      "home": "R. Madrid",
+      "away": "Bayern Mü",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 2,
+      "home": "Sp Lissab",
+      "away": "Arsenal",
+      "best_sign": "X",
+      "decision": "HALV 1X"
+    },
+    {
+      "index": 3,
+      "home": "Paris SG",
+      "away": "Liverpool",
+      "best_sign": "2",
+      "decision": "HEL"
+    },
+    {
+      "index": 4,
+      "home": "Barcelona",
+      "away": "At Madrid",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 5,
+      "home": "Braga",
+      "away": "Real Beti",
+      "best_sign": "2",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 6,
+      "home": "Wrexham",
+      "away": "Southampt",
+      "best_sign": "X",
+      "decision": "HEL"
+    },
+    {
+      "index": 7,
+      "home": "Port Vale",
+      "away": "Rotherham",
+      "best_sign": "X",
+      "decision": "HALV X2"
+    },
+    {
+      "index": 8,
+      "home": "Bromley",
+      "away": "Shrewsbur",
+      "best_sign": "2",
+      "decision": "SPIK X"
+    },
+    {
+      "index": 9,
+      "home": "Ayr Unite",
+      "away": "Dunfermli",
+      "best_sign": "1",
+      "decision": "SPIK 1"
+    },
+    {
+      "index": 10,
+      "home": "Montrose",
+      "away": "Cove Rang",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 11,
+      "home": "Always Re",
+      "away": "LDU Quito",
+      "best_sign": "2",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 12,
+      "home": "Deportivo",
+      "away": "Fluminens",
+      "best_sign": "1",
+      "decision": "SPIK 2"
+    },
+    {
+      "index": 13,
+      "home": "U. Catoli",
+      "away": "Boca Juni",
+      "best_sign": "1",
+      "decision": "SPIK 1"
+    }
+  ],
+  "timestamp": "2026-04-07T09:22:07+00:00"
+}

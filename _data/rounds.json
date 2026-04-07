@@ -134,5 +134,31 @@
     "has_analysis": true,
     "submission_trusted": false,
     "has_coupon": true
+  },
+  "europatipset-2564": {
+    "id": "europatipset-2564",
+    "round_id": "europatipset-2564",
+    "game": "europatipset",
+    "draw_number": 2564,
+    "grade": "A",
+    "has_analysis": true,
+    "published_at": "2026-04-07T09:22:07+00:00",
+    "strategy": "balans",
+    "rows": 188,
+    "median_ev": 1.2194715,
+    "verdict": "PLAY",
+    "has_report": true,
+    "coupon_id": "477467aa35af49428a71bb5567b0932c",
+    "submission_status": "PENDING",
+    "submission_trusted": true,
+    "submission_updated_at": "2026-04-07T09:19:39.435432+00:00",
+    "has_coupon": true,
+    "urls": {
+      "summary": "rounds/europatipset-2564/index.html",
+      "analysis": "rounds/europatipset-2564/analysis.html",
+      "report": "rounds/europatipset-2564/report.html",
+      "coupon": "rounds/europatipset-2564/system.txt",
+      "coupon_preview": "rounds/europatipset-2564/coupon.html"
+    }
   }
 }
