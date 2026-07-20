@@ -60,7 +60,7 @@ ger byggfel.
 npm test
 ```
 
-9 tester körs i isolerade temporära kataloger:
+16 tester körs i isolerade temporära kataloger:
 1. Normal build
 2. Symlänkad round-katalog → fail
 3. Symlänkad fil → fail
@@ -70,6 +70,18 @@ npm test
 7. `.env` i roten → fail
 8. Ogiltigt argument → fail
 9. `dist/` saknar förbjudna filer
+10. Verkligt repo-integration (isolerad kopia)
+11. Symlänkad rot-fil (`index.html`) → fail
+12. Vanlig fil istället för round-katalog → fail
+13. Vanlig fil istället för `latest/` → fail
+14. Dotfil i `_data/` (`.env`) → fail
+15. `dist.bak` i roten → fail
+16. `2026/<id>/oavsiktlig.txt` → fail
+
+## Legacy: `2026/`
+
+Den äldre strukturen `2026/<id>/` tillåts explicit — endast reguljära `.html`-filer.
+Inga symlänkar, dotfiler, kataloger eller andra filtyper accepteras.
 
 ## Deployment
 
@@ -80,8 +92,10 @@ Git-kopplad Cloudflare Workers Builds på `main`:
 
 **Ingen manuell `wrangler deploy`** i normal produktion.
 
-Custom domain `tipscoach.mistyspring.xyz` är kopplad till Workern
-`tipscoach-reports` — separat från `mistyspringxyz`.
+Custom domain `tipscoach.mistyspring.xyz` är planerad att kopplas till Workern
+`tipscoach-reports` — separat från `mistyspringxyz`. Detta är ett kvarstående
+driftsteg som kräver verifiering i Cloudflare innan produktionstraffik kan
+riktas dit.
 
 ## Verifiering
 

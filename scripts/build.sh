@@ -304,7 +304,8 @@ if [ -d "${REPO_ROOT}/2026" ]; then
     for year_dir in "${REPO_ROOT}/2026"/*/; do
         [ -d "${year_dir}" ] || continue
         year_id="$(basename "${year_dir}")"
-        for legacy_file in "${year_dir}"*.html; do
+        # Iterate ALL entries, not just *.html glob
+        for legacy_file in "${year_dir}"*; do
             [ -e "${legacy_file}" ] || continue
             fname="$(basename "${legacy_file}")"
             rel="${legacy_file#${REPO_ROOT}/}"

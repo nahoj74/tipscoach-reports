@@ -341,17 +341,28 @@ run_test "dist/ contains no forbidden files" test_dist_forbidden_absent
 # ══════════════════════════════════════════════════════════════════════
 
 test_real_repo_build() {
-    cd "${REPO_ROOT}"
-    # Save and restore any existing dist/
-    if [ -d dist ]; then mv dist dist.bak; fi
-    trap "rm -rf dist; [ -d dist.bak ] && mv dist.bak dist" RETURN
+    # Run in an isolated copy of the repo's publishable input — never touch
+    # the real checkout.  The build script resolves REPO_ROOT from its own
+    # path, so a full copy of the scripts/ directory makes it work.
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
 
-    bash "${BUILD_SCRIPT}"
+    # Mirror the real repo's publishable input + build infrastructure
+    for item in scripts src index.html _headers robots.txt _data rounds 2026 \
+                wrangler.jsonc package.json; do
+        if [ -e "${REPO_ROOT}/${item}" ]; then
+            cp -r "${REPO_ROOT}/${item}" "${tmp}/"
+        fi
+    done
+
+    cd "${tmp}"
+    bash ./scripts/build.sh
 
     # Verify critical artifacts present
-    test -f dist/_headers      || return 1
-    test -f dist/robots.txt    || return 1
-    test -f dist/_data/rounds.json || return 1
+    test -f dist/_headers           || return 1
+    test -f dist/robots.txt         || return 1
+    test -f dist/_data/rounds.json  || return 1
 
     # Legacy content if present
     if [ -d "${REPO_ROOT}/2026" ]; then
@@ -362,6 +373,9 @@ test_real_repo_build() {
     test ! -e dist/package.json   || return 1
     test ! -e dist/wrangler.jsonc || return 1
     test ! -e dist/src            || return 1
+
+    cd /
+    rm -rf "${tmp}"
 }
 run_test "real repo build succeeds" test_real_repo_build
 
@@ -464,6 +478,61 @@ run_test "dotfile in _data/ rejected" test_dotfile_in_data_rejected
 # ══════════════════════════════════════════════════════════════════════
 
 # Already covered by Test 7 — skip duplicate.
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 15 — dist.bak in fixture root is rejected
+# ══════════════════════════════════════════════════════════════════════
+
+test_dist_bak_rejected() {
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
+
+    create_fixture "${tmp}"
+
+    # dist.bak in repo root must fail
+    mkdir -p "${tmp}/dist.bak"
+
+    cd "${tmp}"
+    if bash ./scripts/build.sh 2>/dev/null; then
+        cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    cd /; rm -rf "${tmp}"
+}
+run_test "dist.bak in fixture root rejected" test_dist_bak_rejected
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 16 — 2026/<id>/oavsiktlig.txt is rejected
+# ══════════════════════════════════════════════════════════════════════
+
+test_legacy_txt_rejected() {
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
+
+    create_fixture "${tmp}"
+
+    # Add legacy 2026/ directory
+    mkdir -p "${tmp}/2026/01"
+    echo "<html>legacy</html>" > "${tmp}/2026/01/report.html"
+
+    # Add unauthorized .txt in legacy path
+    echo "should not be here" > "${tmp}/2026/01/oavsiktlig.txt"
+
+    cd "${tmp}"
+    if bash ./scripts/build.sh 2>/dev/null; then
+        cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    # dist/ must not contain the .txt file
+    if [ -d "${tmp}/dist" ] && [ -f "${tmp}/dist/2026/01/oavsiktlig.txt" ]; then
+        cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    cd /; rm -rf "${tmp}"
+}
+run_test "2026/<id>/oavsiktlig.txt rejected" test_legacy_txt_rejected
 
 # ══════════════════════════════════════════════════════════════════════
 
