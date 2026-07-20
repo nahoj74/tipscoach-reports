@@ -4,6 +4,7 @@
   "description": "Tipscoach public reports — static site served via Cloudflare Workers",
   "scripts": {
     "build": "bash ./scripts/build.sh",
+    "test": "bash ./scripts/test.sh",
     "start": "wrangler dev"
   },
   "devDependencies": {
