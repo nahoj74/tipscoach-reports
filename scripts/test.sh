@@ -337,6 +337,135 @@ test_dist_forbidden_absent() {
 run_test "dist/ contains no forbidden files" test_dist_forbidden_absent
 
 # ══════════════════════════════════════════════════════════════════════
+# Test 10 — integration: real repo build succeeds
+# ══════════════════════════════════════════════════════════════════════
+
+test_real_repo_build() {
+    cd "${REPO_ROOT}"
+    # Save and restore any existing dist/
+    if [ -d dist ]; then mv dist dist.bak; fi
+    trap "rm -rf dist; [ -d dist.bak ] && mv dist.bak dist" RETURN
+
+    bash "${BUILD_SCRIPT}"
+
+    # Verify critical artifacts present
+    test -f dist/_headers      || return 1
+    test -f dist/robots.txt    || return 1
+    test -f dist/_data/rounds.json || return 1
+
+    # Legacy content if present
+    if [ -d "${REPO_ROOT}/2026" ]; then
+        test -d dist/2026 || return 1
+    fi
+
+    # Forbidden files absent
+    test ! -e dist/package.json   || return 1
+    test ! -e dist/wrangler.jsonc || return 1
+    test ! -e dist/src            || return 1
+}
+run_test "real repo build succeeds" test_real_repo_build
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 11 — symlinked root file (index.html) rejected
+# ══════════════════════════════════════════════════════════════════════
+
+test_symlinked_root_file() {
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
+
+    create_fixture "${tmp}"
+
+    local external="/tmp/ext_index_$$.html"
+    echo "ext" > "${external}"
+    rm "${tmp}/index.html"
+    ln -s "${external}" "${tmp}/index.html"
+
+    cd "${tmp}"
+    if bash ./scripts/build.sh 2>/dev/null; then
+        rm -f "${external}"; cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    rm -f "${external}"; cd /; rm -rf "${tmp}"
+}
+run_test "symlinked root file rejected" test_symlinked_root_file
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 12 — regular file where directory expected (rounds/id as file)
+# ══════════════════════════════════════════════════════════════════════
+
+test_file_instead_of_dir() {
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
+
+    create_fixture "${tmp}"
+
+    # Replace a round directory with a regular file
+    rm -rf "${tmp}/rounds/topptipset-3999"
+    echo "not a dir" > "${tmp}/rounds/topptipset-3999"
+
+    cd "${tmp}"
+    if bash ./scripts/build.sh 2>/dev/null; then
+        cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    cd /; rm -rf "${tmp}"
+}
+run_test "regular file where round dir expected rejected" test_file_instead_of_dir
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 13 — file instead of latest/ directory
+# ══════════════════════════════════════════════════════════════════════
+
+test_file_instead_of_latest_dir() {
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
+
+    create_fixture "${tmp}"
+
+    rm -rf "${tmp}/rounds/topptipset-3999/latest"
+    echo "not a dir" > "${tmp}/rounds/topptipset-3999/latest"
+
+    cd "${tmp}"
+    if bash ./scripts/build.sh 2>/dev/null; then
+        cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    cd /; rm -rf "${tmp}"
+}
+run_test "file instead of latest/ dir rejected" test_file_instead_of_latest_dir
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 14 — extra _data file (.env) rejected
+# ══════════════════════════════════════════════════════════════════════
+
+test_dotfile_in_data_rejected() {
+    local tmp
+    tmp="$(mktemp -d)"
+    trap "rm -rf ${tmp}" RETURN
+
+    create_fixture "${tmp}"
+
+    echo "SECRET=xyz" > "${tmp}/_data/.env"
+
+    cd "${tmp}"
+    if bash ./scripts/build.sh 2>/dev/null; then
+        cd /; rm -rf "${tmp}"; return 1
+    fi
+
+    cd /; rm -rf "${tmp}"
+}
+run_test "dotfile in _data/ rejected" test_dotfile_in_data_rejected
+
+# ══════════════════════════════════════════════════════════════════════
+# Test 15 — unauthorized root file (.env at root) rejected (dup guard)
+# ══════════════════════════════════════════════════════════════════════
+
+# Already covered by Test 7 — skip duplicate.
+
+# ══════════════════════════════════════════════════════════════════════
 
 echo ""
 echo "========================================"

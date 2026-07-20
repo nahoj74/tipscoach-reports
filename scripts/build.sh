@@ -14,6 +14,8 @@
 # Allowlist (exact — nothing else is authorized):
 #   Root files:
 #     index.html  _headers  robots.txt  sitemap.xml(opt)
+#   Legacy — explicit paths only:
+#     2026/<subdir>/  — only .html files (no symlinks, no other file types)
 #   _data/rounds.json  (only this one file under _data/)
 #   rounds/<id>/  — only these plain files:
 #     index.html  analysis.html  analysis.json
@@ -89,11 +91,21 @@ scan_symlinks() {
 
 scan_symlinks "${REPO_ROOT}/_data"
 scan_symlinks "${REPO_ROOT}/rounds"
+scan_symlinks "${REPO_ROOT}/2026"
 
 # Also check if the top-level directories themselves are symlinks
-for top_dir in _data rounds; do
+for top_dir in _data rounds 2026; do
     if [ -L "${REPO_ROOT}/${top_dir}" ]; then
         echo "  ✗ ${top_dir}/ is a symlink — rejected"
+        SYMLINK_COUNT=$((SYMLINK_COUNT + 1))
+    fi
+done
+
+# Check root-level publishable files for symlinks
+for root_file in "${ROOT_FILES[@]}"; do
+    local_f="${REPO_ROOT}/${root_file}"
+    if [ -L "${local_f}" ]; then
+        echo "  ✗ symlink: ${root_file} (root file)"
         SYMLINK_COUNT=$((SYMLINK_COUNT + 1))
     fi
 done
@@ -214,7 +226,7 @@ for entry in "${REPO_ROOT}"/*; do
 
     # Skip known non-publishable top-level items
     case "${fname}" in
-        _data|rounds|src|scripts|node_modules|.git|.gitignore|.wrangler|dist|package.json|package-lock.json|wrangler.jsonc|README.md|*.log)
+        _data|rounds|2026|src|scripts|node_modules|.git|.gitignore|.wrangler|dist|package.json|package-lock.json|wrangler.jsonc|README.md|*.log)
             continue
             ;;
     esac
@@ -285,6 +297,89 @@ if [ -d "${REPO_ROOT}/rounds" ]; then
     done
 fi
 
+# ── Legacy 2026/ — explicit precise allowlist ──────────────────────
+
+if [ -d "${REPO_ROOT}/2026" ]; then
+    echo "  → 2026/ (legacy)"
+    for year_dir in "${REPO_ROOT}/2026"/*/; do
+        [ -d "${year_dir}" ] || continue
+        year_id="$(basename "${year_dir}")"
+        for legacy_file in "${year_dir}"*.html; do
+            [ -e "${legacy_file}" ] || continue
+            fname="$(basename "${legacy_file}")"
+            rel="${legacy_file#${REPO_ROOT}/}"
+            if [ -f "${legacy_file}" ]; then
+                case "${fname}" in
+                    *.html) echo "    ✓ ${rel}" ;;
+                    *)      echo "    ✗ ${rel} — only .html files allowed in 2026/"
+                            FAILURES=$((FAILURES + 1)) ;;
+                esac
+            elif [ -L "${legacy_file}" ]; then
+                echo "    ✗ ${rel} — symlinks not allowed in 2026/"
+                FAILURES=$((FAILURES + 1))
+            elif [ -d "${legacy_file}" ]; then
+                echo "    ✗ ${rel} — subdirectories not allowed in 2026/<id>/ (only .html files)"
+                FAILURES=$((FAILURES + 1))
+            else
+                echo "    ✗ ${rel} — not a regular file"
+                FAILURES=$((FAILURES + 1))
+            fi
+        done
+    done
+fi
+
+# ── Directory-type guards: ensure key paths are directories, not files ──
+
+_dir_must_be_dir() {
+    local path="$1"
+    local label="$2"
+    if [ -e "${path}" ] && [ ! -d "${path}" ]; then
+        echo "  ✗ ${label} — exists but is not a directory"
+        FAILURES=$((FAILURES + 1))
+    fi
+}
+
+_dir_must_be_dir "${REPO_ROOT}/rounds" "rounds/"
+_dir_must_be_dir "${REPO_ROOT}/_data" "_data/"
+_dir_must_be_dir "${REPO_ROOT}/2026" "2026/"
+
+# Guard: every entry in 2026/ MUST be a directory
+if [ -d "${REPO_ROOT}/2026" ]; then
+    for entry in "${REPO_ROOT}/2026"/*; do
+        [ -e "${entry}" ] || continue
+        fname="$(basename "${entry}")"
+        rel="${entry#${REPO_ROOT}/}"
+        if [ ! -d "${entry}" ]; then
+            echo "  ✗ ${rel} — 2026/<id> must be a directory"
+            FAILURES=$((FAILURES + 1))
+        fi
+    done
+fi
+
+# Guard: every entry in rounds/ MUST be a directory
+if [ -d "${REPO_ROOT}/rounds" ]; then
+    for entry in "${REPO_ROOT}/rounds"/*; do
+        [ -e "${entry}" ] || continue
+        fname="$(basename "${entry}")"
+        rel="${entry#${REPO_ROOT}/}"
+        if [ ! -d "${entry}" ]; then
+            echo "  ✗ ${rel} — round-id must be a directory, not a $(file -b "${entry}")"
+            FAILURES=$((FAILURES + 1))
+        fi
+    done
+fi
+
+# For each round, check latest/releases/versions are dirs if they exist
+if [ -d "${REPO_ROOT}/rounds" ]; then
+    for round_dir in "${REPO_ROOT}/rounds"/*/; do
+        [ -d "${round_dir}" ] || continue
+        round_id="$(basename "${round_dir}")"
+        _dir_must_be_dir "${round_dir}latest" "rounds/${round_id}/latest"
+        _dir_must_be_dir "${round_dir}releases" "rounds/${round_id}/releases"
+        _dir_must_be_dir "${round_dir}versions" "rounds/${round_id}/versions"
+    done
+fi
+
 if [ "${FAILURES}" -gt 0 ]; then
     echo ""
     echo "ERROR: ${FAILURES} unauthorized file(s) found in publishable input tree." >&2
@@ -320,6 +415,18 @@ copy_file() {
 for fname in "${ROOT_FILES[@]}"; do
     copy_file "${fname}"
 done
+
+# Legacy 2026/ — only .html files in explicit subdirectories
+if [ -d "${REPO_ROOT}/2026" ]; then
+    for year_dir in "${REPO_ROOT}/2026"/*/; do
+        [ -d "${year_dir}" ] || continue
+        for legacy_file in "${year_dir}"*.html; do
+            [ -f "${legacy_file}" ] || continue
+            rel="${legacy_file#${REPO_ROOT}/}"
+            copy_file "${rel}"
+        done
+    done
+fi
 
 # _data/rounds.json
 copy_file "_data/rounds.json"
@@ -420,7 +527,7 @@ while IFS= read -r -d '' d; do
     # Strip trailing slash
     rel="${rel%/}"
     case "${rel}" in
-        _data|rounds|rounds/*|rounds/*/latest|rounds/*/releases|rounds/*/releases/*|rounds/*/versions|rounds/*/versions/*)
+        _data|rounds|rounds/*|rounds/*/latest|rounds/*/releases|rounds/*/releases/*|rounds/*/versions|rounds/*/versions/*|2026|2026/*)
             ;;  # authorized
         *)
             echo "  ✗ ${rel}/ — unexpected directory in dist/"
