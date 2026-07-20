@@ -3,8 +3,7 @@
   "private": true,
   "description": "Tipscoach public reports — static site served via Cloudflare Workers",
   "scripts": {
-    "build": "./scripts/build.sh",
-    "deploy": "wrangler deploy",
+    "build": "bash ./scripts/build.sh",
     "start": "wrangler dev"
   },
   "devDependencies": {
