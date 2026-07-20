@@ -1,0 +1,18 @@
+# Cloudflare Static Assets HTTP headers for tipscoach.mistyspring.xyz
+#
+# Format (Cloudflare _headers):
+#   /url-pattern
+#     Header-Name: value
+
+/rounds/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Cache-Control: public, max-age=3600
+
+/rounds/*/system.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
