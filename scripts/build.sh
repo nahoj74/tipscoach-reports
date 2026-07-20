@@ -150,7 +150,7 @@ for entry in "${REPO_ROOT}"/.*; do
     fname="$(basename "${entry}")"
     # Infrastructure dotfiles that ARE allowed to exist (but not in dist/)
     case "${fname}" in
-        .git|.gitignore|.wrangler|.node-version|.npmrc|.nvmrc)
+        .git|.github|.gitignore|.wrangler|.node-version|.npmrc|.nvmrc)
             continue
             ;;
     esac
